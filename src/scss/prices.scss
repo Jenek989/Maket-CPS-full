@@ -1,0 +1,191 @@
+h2 {
+    @include h2Default;
+  }
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .section_title{        
+        text-transform: uppercase;
+        vertical-align: middle;
+        color: $text-color--gray;
+        background: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+        padding: 16px 0;
+
+        @media (min-width: $screen-lg) {
+            width: 1090px
+        }
+    }
+    @media (min-width: $screen-md) {
+        margin-top: 50px;
+        padding-top: 20px;
+        gap: 24px;
+    }
+
+    &__header {
+        display: none;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        color: $text-color--gray;
+        opacity: 0.72;
+        padding: 0 16px;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+
+        &-item--pos {
+            &--1 {
+                @media (min-width: 768px) {
+                    flex: 3.5;
+                }
+
+                @media (min-width: 1440px) {
+                    flex: 3;
+                }
+            }
+
+            &--2 {
+                flex: 1;
+
+                @media (min-width: 1440px) {
+                    flex: 1.5;
+                }
+            }
+
+            &--3 {
+                flex: 2.5;
+
+                @media (min-width: 1440px) {
+                    flex: 2;
+                }
+            }
+        }
+    }
+
+    &__swiper {
+        overflow: hidden;
+
+        .swiper-wrapper {
+            @media (min-width: 768px) {
+                padding: 0 16px;
+                box-sizing: border-box;
+                background: #FFFFFF;
+                border-radius: 6px;
+                flex-direction: column;
+                align-items: center;
+                min-width: 720px;
+                height: 324px;
+            }
+
+            @media (min-width: 1440px) {
+                padding: 0 24px;
+                width: 1056px;
+            }
+
+            .swiper-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 260px;
+                height: 200px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 6px;
+                @media (max-width: 767px){
+                    padding: 16px;
+
+                }
+                @media (min-width: 768px) {
+                    align-items: center;
+                    border: none;
+                    border-bottom: 1px solid #EAEAEA;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 64px;
+                    border-radius: 0;
+                    width: 100% !important; 
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+
+                .prices__title-item {
+                    @media (min-width: 768px) {
+                        flex: 3.5;
+                    }
+
+                    @media (min-width: 1440px) {
+                        flex: 3;
+                    }
+                }
+
+                .prices__price-item {
+                    @media (min-width: 768px) {
+                        flex: 1;
+                    }
+
+                    @media (min-width: 1440px) {
+                        flex: 1.5;
+                    }
+                }
+
+                .prices__time-order-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @media (min-width: 768px) {
+                        flex: 2.5;
+                    }
+
+                    @media (min-width: 1440px) {
+                        flex: 2;
+                    }
+                }
+
+                .prices__subtitle {
+                    @include fontMediumFooter;
+
+                    @media (min-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                .prices__text {
+                    @include fontRegular;
+                    letter-spacing: 0.2px;
+                }
+
+                .prices__time-order-item div,
+                .prices__price-item,
+                .prices__title-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                .prices__time-order-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .prices__button {            
+                    @include buttonOreder;
+
+                    &:hover {
+                        opacity: 0.5;
+                        transition: opacity 0.2s;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

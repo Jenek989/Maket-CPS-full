@@ -32,6 +32,10 @@ body {
 
     margin: 0 auto;
 
+    @media (min-width: $screen-lg) {
+        width: 1120px;
+    }
+
     @media (min-width: $screen-mega-lg) {
         width: 1440px;
     }
@@ -193,20 +197,21 @@ body {
             display: flex;
             flex-direction: column;
             gap: 24px;
-            padding: 24px 16px 0 16px;
+            padding: 0 16px 220px 16px;
+            height: 100%;
     
             @media (min-width: $screen-md) and (max-width: $screen-lg){
                 gap: 32px;
-                padding: 24px 24px 0 24px;
+                padding: 0 24px 120px 24px;
             }
     
             @media (min-width: $screen-lg) {
                 gap: 19px;
-                padding: 24px 32px 0 32px;
+                padding: 0 32px 120px 32px;
             }
 
             @media (min-width: $screen-mega-lg) {
-                padding-top: 42px;
+                padding-top: 25px;
             }
     
             .main-header {
@@ -358,14 +363,16 @@ body {
             &__full-text {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                gap: 8px;
     
                 @media (min-width: $screen-md) and (max-width: $screen-lg) {
                     width: 310px;
+                    gap: 16px;
                 }
     
                 @media (min-width: $screen-lg) {
                     width: 490px;
+                    gap: 16px;
                 }
             }
     
@@ -383,28 +390,53 @@ body {
                 }
     
                 &--hidden {
-                    display: none;
+
+                    overflow: hidden;
+                    height: 0;
+                    transition: 0.2s;
     
-                    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
                         display: block;
-                        height: 36px;
-                        overflow: hidden;
+                        height: 36px;                        
                         margin-top: 4px;
+                        transition: 0.2s;
                     }
     
-                    @media (min-width: $screen-lg) {
+                    @media (min-width: $screen-mega-lg) {
                         display: block;
+                        height: 80px;
                         margin-top: 4px;
+                        transition: 0.2s;
                     }
-                }
+                    
+                    &.openText {
+
+                        overflow: visible;
+                        
+                        @media (min-width: $screen-sm) {
+                            
+                        height: auto;
+                        
+                        }
+
+                        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+                            height: 120px;
+                        }
+
+                        @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
+                            height: 80px;
+                        }
+
+                        
+                    }
+                }                
             }
     
             &__button {
                 display: flex;
                 align-items: center;
                 align-self: flex-start;
-                gap: 15px;
-                margin-left: 6px;
+                
                 cursor: pointer;
                 letter-spacing: -0.2px;
                 @include fontMedium;
@@ -412,6 +444,21 @@ body {
                 @media (min-width: $screen-lg) {
                     line-height: 24px;
                 }
+
+                    &::before {
+                        content: "";
+                        position: relative;
+                        background: url(/src/img/arrow.svg) no-repeat 50% 50%;
+                        width: 24px;
+                        height: 24px;
+                        right: 3px;
+                    }
+
+                    .buttonText--open::before {
+
+                        transform: rotate(180deg);
+                    }
+                
             }
             
             &__button-image {
@@ -437,5 +484,124 @@ body {
             }
         }
     }
+
+    .swiper-pagination {
+
+        position: relative;
+        z-index: 80;
+        margin-bottom: 30px;
+  
+        @media (min-width: $screen-md) and (max-width: 1015px) {
+          display: none;
+        }
+  
+        @media (min-width: 1015px) and (max-width: $screen-lg) {
+          display: none;
+        }
+  
+        @media (min-width: $screen-lg) {
+          display: none;
+        }
+        
+        .swiper-pagination-bullet {
+          height: 12px;
+          width: 12px;
+        }
+  
+        .swiper-pagination-bullet-active {
+          background-color: #B5B6BC;
+        }
+      }
+
+      .devises__swiper .swiper-pagination {
+        top: 10px;
+      }
+
+      .prices__swiper .swiper-pagination {
+        top: 10px;
+      }
 }
+
+.brand-swiper__button {
+    display: block;
+    position: absolute;
+    color: #1B1C21;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    padding-left: 30px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+
+    @media (min-width: $screen-md) and (max-width: 1015px) {
+      display: block;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+
+    @media (min-width: 1015px) and (max-width: $screen-lg) {
+      display: block;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      
+      margin-top: 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(/src/img/arrow.svg) no-repeat 50% 50%;
+      width: 24px;
+      height: 24px;
+      left: 0;
+    }
+
+    &.button--open::before {
+      transform: rotate(180deg);
+
+      @media (min-width: $screen-md) and (max-width: 1015px) {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+// .swiper-container {
+//     .swiper-pagination {
+//       position: static;
+//       padding-top: 16px;
+//       display: flex; //изменяем тип отображения на flex-контейнер
+//       justify-content: center; //центрируем bullets по горизонтали
+
+//       @media (min-width: $screen-md) and (max-width: 1015px) {
+//             display: none;
+//         }
+      
+//         @media (min-width: 1015px) and (max-width: $screen-lg) {
+//             display: none;
+//         }
+      
+//         @media (min-width: $screen-lg) {
+//             display: none;
+//         }
+  
+//       &-bullet {
+//         height: 12px; // устанавливаем высоту bullets на 12 px
+//         width: 12px; // устанавливаем ширину bullets на 12 px
+//         background: #DDD; // устанавливаем цвет неактивных bullets
+//         border-radius: 50%; // делаем их круглыми
+//         margin: 0 6px; // устанавливаем отступ по горизонтали в 6px
+  
+//         &-active {
+//           background: #B5B6BC; //устанавливем цвет для активных bullets
+//         }
+//       }
+//     }
+//   }
 

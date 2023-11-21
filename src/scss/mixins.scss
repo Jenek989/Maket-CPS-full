@@ -17,3 +17,88 @@
   font-weight: 600;
   line-height: 28px;
 }
+
+@mixin fontMediumFooter {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+}
+
+@mixin fontBoldPriceButton {
+  font-family: 'TT Lakes';
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+@mixin imgButton {
+  position: relative;
+  justify-self: end;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+
+  &::before {
+    @include pseudoElement(135deg, 16px, 11px);
+  }
+
+  &::after {
+    @include pseudoElement(45deg, 16px, 16px);
+  }
+}
+
+@mixin buttonOreder {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  @include fontBoldPriceButton;
+  padding: 4px 40px 4px 12px;
+  background-color: $iconColor;
+  border-radius: 16px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    width: 7px;
+    height: 9px;
+    background-image: url('../img/arrow_right_white.svg');
+  }
+}
+
+@mixin pseudoElement($deg, $right, $top) {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  right: $right;
+  top: $top;
+  background-color: #FF3E79;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transform: rotate($deg);
+}
+
+@mixin h2Default {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+@mixin borderLeft($magin) {
+  content: "";
+  margin-right: $magin;
+  border-left: 4px solid #41F6D7;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+}

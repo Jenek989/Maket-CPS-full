@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+.footer {
+  position: relative;
+  margin-top: auto;
+  bottom: 140px;
+  padding: 0 16px 0 21px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  @include fontMediumFooter;
+  opacity: 0.72;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    bottom: 60px;
+
+    &__text {
+      flex: 1;
+    }
+
+    &__text:first-child {
+      text-align: left;
+    }
+
+    &__text:last-child {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $screen-mega-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1120px;
+    margin-left: 320px;
+    bottom: 60px;
+
+    &__text {
+      flex: 1;
+    }
+
+    &__text:first-child {
+      text-align: left;
+    }
+
+    &__text:last-child {
+      text-align: right;
+    }
+  }
+}

@@ -1,28 +1,49 @@
-// .sidebar {
-//   position: fixed;
-//   transform: translateX(-1000px);
-//   transition: transform 0.2s;
-// }
-
 .sidebar-wrapper {
-  background-color: $color-bg--white;
+  
   @include fontMedium;
+
+  &.sidebarBg--open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    @media (min-width: $screen-mega-lg) {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
 
   .sidebar {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 320px;
+    min-width: 320px;
     height: 100vh;
     background: $color-bg--white;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     transform: translateX(-1000px);
     transition: 0.2s;
     z-index: 100;
-
+    
     @media (min-width: $screen-mega-lg) {
+      position: fixed;
       transform: translateX(0);
       box-shadow: none;
+    }
+
+    &.sidebar--open {
+      transform: translateX(0);
+
+      @media (min-width: $screen-sm) and (max-width: 360px) {
+        width: 100%;
+      }
+
+      @media (max-width: $screen-mega-lg) {
+        position: fixed;
+        left: 0;
+      }
+
     }
 
     .opacity:hover {
@@ -82,13 +103,8 @@
         }
       
         &__link-search {
-          background: url("/src/img/search.svg") no-repeat 50% 50%;
 
-          @media (min-width: $screen-mega-lg) {
-
-            background: url("/src/img/loupe.svg") no-repeat 50% 50%;
-
-          }
+          background: url("/src/img/loupe.svg") no-repeat 50% 50%;
 
         }
 
