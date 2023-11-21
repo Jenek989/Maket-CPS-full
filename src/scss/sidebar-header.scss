@@ -1,0 +1,218 @@
+// .sidebar {
+//   position: fixed;
+//   transform: translateX(-1000px);
+//   transition: transform 0.2s;
+// }
+
+.sidebar-wrapper {
+  background-color: $color-bg--white;
+  @include fontMedium;
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    height: 100vh;
+    background: $color-bg--white;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    transform: translateX(-1000px);
+    transition: 0.2s;
+    z-index: 100;
+
+    @media (min-width: $screen-mega-lg) {
+      transform: translateX(0);
+      box-shadow: none;
+    }
+
+    .opacity:hover {
+      color: rgba(126, 126, 130, 0.8);
+      transition: 0.2s;
+    }
+
+    .opacity:not(:hover) {
+      transition: 0.2s;
+    }
+
+    .sidebar-header {
+      padding: 15px 24px 0 24px;
+
+      @media (min-width: $screen-mega-lg) {
+        
+      }
+
+      .sidebar-upper-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+
+        .visualitty-hidden {
+          visibility: hidden;
+        }
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #FF3E79;
+        }
+
+        .icon-opacity:hover {
+          background-color: rgba(255, 110, 155, 0.9);
+          transition: 0.2s;
+        }
+    
+        .icon-opacity:not(:hover) {
+          transition: 0.2s;
+        }
+
+        &__link-cancel {
+          background: url("/src/img/cancel.svg") no-repeat 50% 50%;
+
+          @media (min-width: $screen-mega-lg) {
+            visibility: hidden;
+            transform: translateX(-1000px);
+            transition: 0.2s;
+          }
+        }
+      
+        &__link-search {
+          background: url("/src/img/search.svg") no-repeat 50% 50%;
+
+          @media (min-width: $screen-mega-lg) {
+
+            background: url("/src/img/loupe.svg") no-repeat 50% 50%;
+
+          }
+
+        }
+
+        &__item {
+
+          &--shift-left {
+            flex-grow: 1;
+            margin-left: 16px;
+
+            @media (min-width: $screen-mega-lg) {
+              transform: translateX(-55px);
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+
+    .sidebar-navigation {
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 24px;
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 32px;
+          background: #41F6D7;
+          left: 0px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          transition: 0.3s;
+          opacity: 0;
+        }
+
+        &:hover::before {
+          opacity: 1;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .sidebar-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 24px;
+      padding-bottom: 32px;
+
+      &--shift-bottom {
+        margin-top: auto;
+      }
+
+      .sidebar-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .visualitty-hidden {
+          visibility: hidden;
+        }
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #FF3E79;
+        }
+
+        .icon-opacity:hover {
+          background-color: rgba(255, 110, 155, 0.9);
+          transition: 0.2s;
+        }
+    
+        .icon-opacity:not(:hover) {
+          transition: 0.2s;
+        }
+
+        &__list {
+          display: flex;
+          gap: 16px;
+        }
+
+        &__link-phone {
+          background: url("/src/img/phone.svg") no-repeat 50% 50%;
+        }
+      
+        &__link-message {
+          background: url("/src/img/message.svg") no-repeat 50% 50%;
+        }
+      
+        &__link-contact {
+          background: url("/src/img/contact.svg") no-repeat 50% 50%;
+        }
+
+        &__mail {
+          align-self: flex-start;
+        }
+
+        &__number {
+          align-self: flex-start;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 32px;
+        }
+      }
+
+      .sidebar-lang__list {
+        display: flex;
+        gap: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin fontRegular {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+@mixin fontMedium {
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin fontBold {
+  font-family: 'TT Lakes';
+  font-weight: 600;
+  line-height: 28px;
+}
