@@ -1,6 +1,6 @@
 .icon {
-    @include icon;
-  }
+  @include icon;
+}
 
 .popup-feedback {
   position: fixed;
@@ -11,7 +11,9 @@
   width: 8000px;
   height: 100%;
   visibility: hidden;
-  transition: right 0.2s, visibility 50ms;
+  transition:
+    right 0.2s,
+    visibility 50ms;
   background: rgba(255, 255, 255, 0.9);
 
   @media (max-width: $screen-md) {
