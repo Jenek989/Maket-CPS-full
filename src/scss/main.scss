@@ -227,6 +227,10 @@ body {
           line-height: 40px;
           margin: 0;
 
+          @media (min-width: $screen-md) {
+            margin: 0.67em;
+          }
+
           @media (min-width: $screen-lg) {
             display: flex;
             justify-content: space-between;
