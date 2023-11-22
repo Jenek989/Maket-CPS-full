@@ -195,7 +195,7 @@ h2 {
               right: 16px;
               border: 2px solid #ff3e79;
               border-radius: 50%;
-              background: url('./src/img/arrow_right.svg') no-repeat 52% 50%;
+              background: url('/img/arrow_right.svg') no-repeat 52% 50%;
             }
           }
 
@@ -207,55 +207,5 @@ h2 {
         }
       }
     }
-
-    // &__button {
-    //   display: block;
-    //   position: absolute;
-    //   color: #1B1C21;
-    //   margin-top: 10px;
-    //   font-size: 16px;
-    //   font-weight: 500;
-    //   line-height: 24px;
-
-    //   padding-left: 30px;
-    //   cursor: pointer;
-    //   z-index: 10;
-    //   display: none;
-
-    //   @media (min-width: $screen-md) and (max-width: 1015px) {
-    //     display: block;
-    //     margin-top: 24px;
-    //     cursor: pointer;
-    //   }
-
-    //   @media (min-width: 1015px) and (max-width: $screen-lg) {
-    //     display: block;
-    //     margin-top: 24px;
-    //     cursor: pointer;
-    //   }
-
-    //   @media (min-width: $screen-lg) {
-    //     display: block;
-
-    //     margin-top: 24px;
-    //   }
-
-    //   &::before {
-    //     content: "";
-    //     position: absolute;
-    //     background: url(./src/img/arrow.svg) no-repeat 50% 50%;
-    //     width: 24px;
-    //     height: 24px;
-    //     left: 0;
-    //   }
-
-    //   &.button--open::before {
-    //     transform: rotate(180deg);
-
-    //     @media (min-width: $screen-md) and (max-width: 1015px) {
-    //       transform: rotate(180deg);
-    //     }
-    //   }
-    // }
   }
 }
