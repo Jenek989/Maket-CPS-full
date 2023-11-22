@@ -702,7 +702,8 @@ body {
   margin-right: 17px; }
 
 .body-wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: 0.2s; }
   @media (min-width: 1120px) {
     .body-wrapper {
       width: 1120px; } }
