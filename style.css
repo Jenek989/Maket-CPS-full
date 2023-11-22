@@ -1831,6 +1831,9 @@ h2 {
   visibility: hidden;
   transition: right 0.2s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
+  @media (max-width: 768px) {
+    .popup-call {
+      width: 100%; } }
   .popup-call__body {
     margin-left: auto;
     padding: 40px 32px;
@@ -1939,6 +1942,9 @@ h2 {
   visibility: hidden;
   transition: right 0.2s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
+  @media (max-width: 768px) {
+    .popup-feedback {
+      width: 100%; } }
   .popup-feedback__body {
     margin-left: auto;
     padding: 40px 32px;
