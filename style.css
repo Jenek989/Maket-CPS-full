@@ -931,6 +931,7 @@ body {
     .body-wrapper .wrapper .about__full-text {
       display: flex;
       flex-direction: column;
+      margin-top: 24px;
       gap: 8px; }
       @media (min-width: 768px) and (max-width: 1120px) {
         .body-wrapper .wrapper .about__full-text {
