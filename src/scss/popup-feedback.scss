@@ -4,9 +4,10 @@
   right: -2000px;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 10000px;
   height: 100%;
-  transition: 0.35s;
+  visibility: hidden;
+  transition: right 0.2s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9);
 
   &__body {
@@ -27,6 +28,7 @@
   }
 
   &--visible {
+    visibility: visible;
     right: 0;
   }
 
