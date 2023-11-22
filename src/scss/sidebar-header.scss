@@ -92,7 +92,7 @@
         }
 
         &__link-cancel {
-          background: url('/img/cancel.svg') no-repeat 50% 50%;
+          background: url('img//cancel.svg') no-repeat 50% 50%;
 
           @media (min-width: $screen-mega-lg) {
             visibility: hidden;
@@ -102,7 +102,7 @@
         }
 
         &__link-search {
-          background: url('/img/loupe.svg') no-repeat 50% 50%;
+          background: url('img//loupe.svg') no-repeat 50% 50%;
         }
 
         &__item {
@@ -197,15 +197,15 @@
         }
 
         &__link-phone {
-          background: url('/img/phone.svg') no-repeat 50% 50%;
+          background: url('img//phone.svg') no-repeat 50% 50%;
         }
 
         &__link-message {
-          background: url('/img/message.svg') no-repeat 50% 50%;
+          background: url('img//message.svg') no-repeat 50% 50%;
         }
 
         &__link-contact {
-          background: url('/img/contact.svg') no-repeat 50% 50%;
+          background: url('img//contact.svg') no-repeat 50% 50%;
         }
 
         &__mail {
