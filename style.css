@@ -1083,6 +1083,13 @@ body {
       .brand-swiper__button.button--open::before {
         transform: rotate(180deg); } }
 
+.opacity:hover {
+  opacity: 0.7;
+  transition: 0.2s; }
+
+.opacity:not(:hover) {
+  transition: 0.2s; }
+
 h2 {
   font-weight: inherit;
   font-size: inherit;
@@ -1303,11 +1310,6 @@ h2 {
         .sidebar-wrapper .sidebar.sidebar--open {
           position: fixed;
           left: 0; } }
-    .sidebar-wrapper .sidebar .opacity:hover {
-      color: rgba(126, 126, 130, 0.8);
-      transition: 0.2s; }
-    .sidebar-wrapper .sidebar .opacity:not(:hover) {
-      transition: 0.2s; }
     .sidebar-wrapper .sidebar .sidebar-header {
       padding: 15px 24px 0 24px; }
       .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu {
@@ -1326,10 +1328,10 @@ h2 {
           height: 40px;
           border-radius: 50%;
           background-color: #ff3e79; }
-        .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .icon-opacity:hover {
-          background-color: rgba(255, 110, 155, 0.9);
+        .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .opacity:hover {
+          opacity: 0.7;
           transition: 0.2s; }
-        .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .icon-opacity:not(:hover) {
+        .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .opacity:not(:hover) {
           transition: 0.2s; }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-cancel {
           background: url(./static/cancel.svg) no-repeat 50% 50%; }
