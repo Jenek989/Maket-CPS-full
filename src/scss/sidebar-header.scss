@@ -1,5 +1,4 @@
 .sidebar-wrapper {
-  
   @include fontMedium;
 
   &.sidebarBg--open {
@@ -21,11 +20,13 @@
     min-width: 320px;
     height: 100vh;
     background: $color-bg--white;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     transform: translateX(-1000px);
     transition: 0.2s;
     z-index: 100;
-    
+
     @media (min-width: $screen-mega-lg) {
       position: fixed;
       transform: translateX(0);
@@ -43,7 +44,6 @@
         position: fixed;
         left: 0;
       }
-
     }
 
     .opacity:hover {
@@ -59,7 +59,6 @@
       padding: 15px 24px 0 24px;
 
       @media (min-width: $screen-mega-lg) {
-        
       }
 
       .sidebar-upper-menu {
@@ -80,20 +79,20 @@
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: #FF3E79;
+          background-color: #ff3e79;
         }
 
         .icon-opacity:hover {
           background-color: rgba(255, 110, 155, 0.9);
           transition: 0.2s;
         }
-    
+
         .icon-opacity:not(:hover) {
           transition: 0.2s;
         }
 
         &__link-cancel {
-          background: url("/src/img/cancel.svg") no-repeat 50% 50%;
+          background: url('/src/img/cancel.svg') no-repeat 50% 50%;
 
           @media (min-width: $screen-mega-lg) {
             visibility: hidden;
@@ -101,15 +100,12 @@
             transition: 0.2s;
           }
         }
-      
+
         &__link-search {
-
-          background: url("/src/img/loupe.svg") no-repeat 50% 50%;
-
+          background: url('/src/img/loupe.svg') no-repeat 50% 50%;
         }
 
         &__item {
-
           &--shift-left {
             flex-grow: 1;
             margin-left: 16px;
@@ -124,7 +120,6 @@
     }
 
     .sidebar-navigation {
-
       &__list {
         display: flex;
         flex-direction: column;
@@ -138,11 +133,11 @@
         align-items: center;
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           width: 4px;
           height: 32px;
-          background: #41F6D7;
+          background: #41f6d7;
           left: 0px;
           border-top-right-radius: 20px;
           border-bottom-right-radius: 20px;
@@ -184,14 +179,14 @@
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: #FF3E79;
+          background-color: #ff3e79;
         }
 
         .icon-opacity:hover {
           background-color: rgba(255, 110, 155, 0.9);
           transition: 0.2s;
         }
-    
+
         .icon-opacity:not(:hover) {
           transition: 0.2s;
         }
@@ -202,15 +197,15 @@
         }
 
         &__link-phone {
-          background: url("/src/img/phone.svg") no-repeat 50% 50%;
+          background: url('/src/img/phone.svg') no-repeat 50% 50%;
         }
-      
+
         &__link-message {
-          background: url("/src/img/message.svg") no-repeat 50% 50%;
+          background: url('/src/img/message.svg') no-repeat 50% 50%;
         }
-      
+
         &__link-contact {
-          background: url("/src/img/contact.svg") no-repeat 50% 50%;
+          background: url('/src/img/contact.svg') no-repeat 50% 50%;
         }
 
         &__mail {

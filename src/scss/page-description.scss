@@ -1,99 +1,98 @@
 @import './variables.scss';
 
 .page-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .main__section {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    
-    .main__section {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    gap: 16px;
 
-        .description {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+    .description {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
-            &__text {
-                height: 90px;
-                overflow-y: hidden;
-                transition: height 0.3s;
-            }
-            .hidden {
-                height: 216px;
-            }
-            .button {
-                display: block;
-              }
-        }
+      &__text {
+        height: 90px;
+        overflow-y: hidden;
+        transition: height 0.3s;
+      }
+      .hidden {
+        height: 216px;
+      }
+      .button {
+        display: block;
+      }
+    }
 
-        .info-img {
-            margin: 0 -16px;
-            width: 320px;
-            height: 176px;
-        }
-
-        @media (min-width: 768px) {
-            flex-direction: row;
-            justify-content: space-between;
-
-            .description {
-                &__text {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    height: 140px;
-                    width: 312px;
-                    overflow-y: hidden;
-                    transition: height 0.3s;
-
-                    &__item {
-                        line-height: 20px;
-                    }
-                }
-                .hidden {
-                    height: 220px;
-                }
-                @media (min-width: 1440px){
-                    height: 160px;
-                }
-            }
-
-            .info-img {
-                margin: 0;
-                width: 360px;
-                height: 208px;
-                border-radius: 6px;
-            }
-        }
+    .info-img {
+      margin: 0 -16px;
+      width: 320px;
+      height: 176px;
     }
 
     @media (min-width: 768px) {
-        gap: 32px;
-    }
+      flex-direction: row;
+      justify-content: space-between;
 
+      .description {
+        &__text {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          height: 140px;
+          width: 312px;
+          overflow-y: hidden;
+          transition: height 0.3s;
+
+          &__item {
+            line-height: 20px;
+          }
+        }
+        .hidden {
+          height: 220px;
+        }
+        @media (min-width: 1440px) {
+          height: 160px;
+        }
+      }
+
+      .info-img {
+        margin: 0;
+        width: 360px;
+        height: 208px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    gap: 32px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .page-description {
-        gap: 8px;
-        .main__section {
-            .description {
-                &__text {
-                    height: 160px;
-                    width: 490px;
-                    overflow: visible;
-                }
-            }
-
-            .info-img {
-                margin: 0;
-                width: 531px;
-                height: 307px;
-                border-radius: 6px;
-            }
+  .page-description {
+    gap: 8px;
+    .main__section {
+      .description {
+        &__text {
+          height: 160px;
+          width: 490px;
+          overflow: visible;
         }
+      }
+
+      .info-img {
+        margin: 0;
+        width: 531px;
+        height: 307px;
+        border-radius: 6px;
+      }
     }
+  }
 }

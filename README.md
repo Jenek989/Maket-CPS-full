@@ -45,7 +45,7 @@ git init -b main
 git add . && git commit -m "initial commit"
 ```
 
-соединить git удаленный с локальным, *USER* (пользователь) и *REPO* (репозиторий)
+соединить git удаленный с локальным, _USER_ (пользователь) и _REPO_ (репозиторий)
 
 ```properties
 git remote add origin https://github.com/USER/REPO.git

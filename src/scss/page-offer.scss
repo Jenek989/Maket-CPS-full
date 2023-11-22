@@ -1,39 +1,37 @@
 @import './variables.scss';
 
 .page-offer {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    &__info {   
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        @media (min-width: 768px){
-            width: 421px;
-        }
+  &__info {
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    @media (min-width: 768px) {
+      width: 421px;
     }
+  }
 
-    &__link {
+  &__link {
+    @include fontBold;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
 
-        @include fontBold;
-        letter-spacing: -0.2px;
-        color: #1B1C21;
+    .button-offer {
+      position: relative;
+      margin-top: 10px;
 
-        .button-offer{
-            
-            position: relative;
-            margin-top: 10px;
-
-            &::after {
-                content: '';
-                position: absolute;
-                margin-top: 7px;
-                margin-left: 5px;
-                width: 13px;
-                height: 13px;
-                background: url('../img/arrow_right.svg') no-repeat 100% 100%;
-                background-size: contain;
-            }
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 5px;
+        width: 13px;
+        height: 13px;
+        background: url('../img/arrow_right.svg') no-repeat 100% 100%;
+        background-size: contain;
+      }
     }
+  }
 }

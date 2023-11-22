@@ -3,76 +3,81 @@ h2 {
 }
 
 .devises {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
+
+  .section_title {
+    @include fontMedium;
+    text-transform: uppercase;
+    color: $text-color--gray;
+    padding: 16px 0;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
+
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+
+    .swiper-wrapper {
+      height: 160px;
+
+      @media (min-width: 768px) {
+        overflow-y: hidden;
+        transition: height 0.3s;
+        flex-wrap: wrap;
         gap: 24px;
-    }
+      }
 
-    .section_title {
-        @include fontMedium;
-        text-transform: uppercase;
-        color: $text-color--gray;
-    }
+      @media (min-width: 1440px) {
+        gap: 32px;
+      }
 
-    &__swiper {
-        overflow: hidden;
+      .swiper-slide {
+        width: 240px;
+        height: 160px;
+        padding: 16px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
 
-        .swiper-wrapper {
-            height: 160px;
-
-            @media (min-width: 768px) {
-                overflow-y: hidden;
-                transition: height 0.3s;
-                flex-wrap: wrap;
-                gap: 24px;
-            }
-
-            @media (min-width: 1440px) {
-                gap: 32px;
-            }
-
-            .swiper-slide {
-                width: 240px;
-                height: 160px;
-                padding: 16px;
-                background: #FFFFFF;
-                border: 1px solid #EAEAEA;
-                border-radius: 6px;
-
-                @media (min-width: 768px) {
-                    min-width: 200px;
-                    flex-grow: 1;
-                }
-
-                &__link {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    .devises__text {
-                        @include fontMedium;
-                        color: $text-color--black;
-                        align-self: flex-start;
-                    }
-
-                    .swiper-slide_image-button {
-                        align-self: flex-end;
-                        @include imgButton;
-                    }
-                }
-            }
-
+        @media (min-width: 768px) {
+          min-width: 200px;
+          flex-grow: 1;
         }
 
-        .hidden {
-            height: 344px;
-            @media (min-width: 1440px) {
-                height: 160px;
-            }
+        &__link {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .devises__text {
+            @include fontMedium;
+            color: $text-color--black;
+            align-self: flex-start;
+          }
+
+          .swiper-slide_image-button {
+            align-self: flex-end;
+            @include imgButton;
+          }
         }
+      }
     }
+
+    .hidden {
+      height: 344px;
+      @media (min-width: 1440px) {
+        height: 160px;
+      }
+    }
+  }
 }

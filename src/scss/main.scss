@@ -1,576 +1,561 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-    border: none;
-    text-decoration: inherit;
-    background-color: inherit;
+  border: none;
+  text-decoration: inherit;
+  background-color: inherit;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    @include fontRegular;
-    color: $text-color--black;
-    margin: 0;
+  @include fontRegular;
+  color: $text-color--black;
+  margin: 0;
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .body-wrapper {
+  margin: 0 auto;
 
+  @media (min-width: $screen-lg) {
+    width: 1120px;
+  }
+
+  @media (min-width: $screen-mega-lg) {
+    width: 1440px;
+  }
+  .wrapper {
+    min-width: $screen-sm;
+    background-color: $color-bg--gray;
     margin: 0 auto;
+    padding-right: 0;
+    @include fontMedium;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      min-width: $screen-md;
+    }
 
     @media (min-width: $screen-lg) {
-        width: 1120px;
+      width: $screen-lg;
     }
 
     @media (min-width: $screen-mega-lg) {
-        width: 1440px;
-    }
-    .wrapper {
-        min-width: $screen-sm;
-        background-color: $color-bg--gray;
-        margin: 0 auto;
-        padding-right: 0;
-        @include fontMedium;
-    
-        @media (min-width: $screen-md) and (max-width: $screen-lg) {
-            min-width: $screen-md;
-        }
-    
-        @media (min-width: $screen-lg) {
-            width: $screen-lg;
-        }
-    
-        @media (min-width: $screen-mega-lg) {
-            transform: translateX(160px);
-        }
-    
-        .header {
-            display: flex;
-            width: 100%;
-            height: 88px;
-    
-            @media (min-width: $screen-mega-lg) {
-                display: none;
-            }
-    
-            .upper-menu {
-                display: flex;
-                position: relative;
-                justify-content: space-evenly;
-                align-items: center;
-                gap: 16px;
-                padding: 14px;
-                width: 100%;
-                background-color: white;
-                border-bottom: 1px solid #D9FFF5;
-    
-                @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                    padding: 24px;
-                }
-
-                @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
-                    padding: 24px;
-                }
-    
-                .icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background-color: #FF3E79;
-                }
-    
-                &__item-burger {
-                    display: flex;
-                }
-    
-                &__link-burger {
-                    background: url("/src/img/burger.svg") no-repeat 50% 50%;
-    
-                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            align-self: center;
-                            left: 85px;
-                            width: 2px;
-                            height: 32px;
-                            background: #EAEAEA;
-                            border-radius: 12px;
-                        }
-                    }
-                }
-    
-                &__item--shift-left {
-    
-                    flex-grow: 1;
-    
-                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
-                        flex-grow: 1;
-                        margin-left: 25px;
-                    }
-                }
-    
-                &__item-settings--shift-right {
-    
-                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg){
-                        margin-left: 25px;
-                    }
-                }
-    
-                &__link {
-                    display: block;
-                    width: fit-content;
-                }
-    
-                &__link-phone {
-                    background: url("/src/img/phone.svg") no-repeat 50% 50%;
-                }
-    
-                &__link-message {
-                    background: url("/src/img/message.svg") no-repeat 50% 50%;
-                }
-    
-                &__link-contact {
-                    background: url("/src/img/contact.svg") no-repeat 50% 50%;
-                }
-    
-                &__link-settings {
-                    background: url("/src/img/settings.svg") no-repeat 50% 50%;
-                }
-                
-                &__link-search {
-                    background: url("/src/img/search.svg") no-repeat 50% 50%;
-                }
-                
-                &__item-settings {
-                    display: flex;
-    
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        align-self: center;
-                        right: 130px;
-                        width: 2px;
-                        height: 32px;
-                        background: #EAEAEA;
-                        border-radius: 12px;
-    
-                        @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
-                            right: 140px;
-                        }
-                    }
-                }
-    
-                &__item--hidden {
-                    display: none;
-    
-                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
-                        display: block;
-                    }
-    
-                }
-                
-                .visualitty-hidden {
-                    visibility: hidden;
-                }
-            }        
-        }
-    
-        .main {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            padding: 0 16px 220px 16px;
-            height: 100%;
-    
-            @media (min-width: $screen-md) and (max-width: $screen-lg){
-                gap: 32px;
-                padding: 0 24px 120px 24px;
-            }
-    
-            @media (min-width: $screen-lg) {
-                gap: 19px;
-                padding: 0 32px 120px 32px;
-            }
-
-            @media (min-width: $screen-mega-lg) {
-                padding-top: 25px;
-            }
-    
-            .main-header {
-    
-                @media (min-width: $screen-lg) {
-                    display: flex;
-                    justify-content: space-between;
-                }
-    
-                &__tilte {
-                    position: relative;
-                    @include fontBold;
-                    font-size: 28px;                
-                    line-height: 40px;
-    
-                    @media (min-width: $screen-lg) {
-                        display: flex;
-                        justify-content: space-between;
-                    }
-    
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        width: 4px;
-                        height: 40px;
-                        background: #41F6D7;
-                        left: -16px;
-                        border-top-right-radius: 20px;
-                        border-bottom-right-radius: 20px;
-    
-                        @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                            left: -24px;
-                        }
-    
-                        @media (min-width: $screen-lg) {
-                            left: -32px;
-                        }
-                    }
-                }
-    
-                &__menu {
-                    display: none;
-    
-                    @media (min-width: $screen-mega-lg) {
-                        display: flex;
-                        align-items: center;
-                        gap: 32px;
-                    }
-                }
-    
-                .icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background-color: #FF3E79;
-                }
-    
-                &__link-settings {
-                    background: url("/src/img/settings.svg") no-repeat 50% 50%;
-                }
-    
-                &__link-search {
-                    background: url("/src/img/search.svg") no-repeat 50% 50%;
-                }
-    
-                &__link {
-    
-                    @media (min-width: $screen-lg) {
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                        color: $text-color--black;
-                        font-weight: 500;
-                    }
-                }
-            }
-    
-            .navigation {
-    
-                &__list {
-                    display: flex;
-                    overflow-x: scroll;
-                    white-space: pre;
-    
-                    @media (min-width: $screen-lg) {
-                        flex-wrap: wrap;
-                        overflow-x: visible;
-                    }
-    
-                    &::-webkit-scrollbar {
-                        width: 0;
-                        height: 0;
-                    }
-                }
-    
-                
-    
-                &__item {
-                    padding: 8px 16px;
-                    color: $text-color--gray;
-    
-                    @media (min-width: $screen-lg) {
-                        flex-grow: 1;
-                    }
-    
-                    &:last-child {
-    
-                        @media (min-width: $screen-lg) {
-                            flex-grow: 0;
-                        }
-                    }
-    
-                    &:hover {
-                        padding: 6px 14px;
-                        background-color: #FFFFFF;
-                        border: 2px solid #B8FFEC;
-                        border-radius: 6px;
-                    }
-                }
-                
-                
-            }
-        }
-    
-        .about {
-    
-            &__content {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-    
-                @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 64px;
-                    padding-right: 15px;
-                }
-    
-                @media (min-width: $screen-lg) {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 50px;
-                }
-            }
-    
-            &__full-text {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-    
-                @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                    width: 310px;
-                    gap: 16px;
-                }
-    
-                @media (min-width: $screen-lg) {
-                    width: 490px;
-                    gap: 16px;
-                }
-            }
-    
-            &__text {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 18px;
-    
-                @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                    line-height: 20px;
-                }
-    
-                @media (min-width: $screen-lg) {
-                    line-height: 20px;
-                }
-    
-                &--hidden {
-
-                    overflow: hidden;
-                    height: 0;
-                    transition: 0.2s;
-    
-                    @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
-                        display: block;
-                        height: 36px;                        
-                        margin-top: 4px;
-                        transition: 0.2s;
-                    }
-    
-                    @media (min-width: $screen-mega-lg) {
-                        display: block;
-                        height: 80px;
-                        margin-top: 4px;
-                        transition: 0.2s;
-                    }
-                    
-                    &.openText {
-
-                        overflow: visible;
-                        
-                        @media (min-width: $screen-sm) {
-                            
-                        height: auto;
-                        
-                        }
-
-                        @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                            height: 120px;
-                        }
-
-                        @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
-                            height: 80px;
-                        }
-
-                        
-                    }
-                }                
-            }
-    
-            &__button {
-                display: flex;
-                align-items: center;
-                align-self: flex-start;
-                
-                cursor: pointer;
-                letter-spacing: -0.2px;
-                @include fontMedium;
-    
-                @media (min-width: $screen-lg) {
-                    line-height: 24px;
-                }
-
-                    &::before {
-                        content: "";
-                        position: relative;
-                        background: url(/src/img/arrow.svg) no-repeat 50% 50%;
-                        width: 24px;
-                        height: 24px;
-                        right: 3px;
-                    }
-
-                    .buttonText--open::before {
-
-                        transform: rotate(180deg);
-                    }
-                
-            }
-            
-            &__button-image {
-                background: url("/src/img/arrow.svg") no-repeat 100% 100%;
-                padding: 6px;
-            }
-            
-            &__image {
-                margin: 0 -16px;
-    
-                @media (min-width: $screen-md) and (max-width: $screen-lg) {
-                    flex-grow: 1;
-                    width: 360px;
-                    height: auto;
-                    border-radius: 6px;
-                }
-    
-                @media (min-width: $screen-lg) {
-                    width: 532px;
-                    height: auto;
-                    border-radius: 6px;
-                }
-            }
-        }
+      transform: translateX(160px);
     }
 
-    .swiper-pagination {
+    .header {
+      display: flex;
+      width: 100%;
+      height: 88px;
 
+      @media (min-width: $screen-mega-lg) {
+        display: none;
+      }
+
+      .upper-menu {
+        display: flex;
         position: relative;
-        z-index: 80;
-        margin-bottom: 30px;
-  
-        @media (min-width: $screen-md) and (max-width: 1015px) {
-          display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 16px;
+        padding: 14px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #d9fff5;
+
+        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+          padding: 24px;
         }
-  
-        @media (min-width: 1015px) and (max-width: $screen-lg) {
-          display: none;
+
+        @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
+          padding: 24px;
         }
-  
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #ff3e79;
+        }
+
+        &__item-burger {
+          display: flex;
+        }
+
+        &__link-burger {
+          background: url('/src/img/burger.svg') no-repeat 50% 50%;
+
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            &::after {
+              content: '';
+              position: absolute;
+              align-self: center;
+              left: 85px;
+              width: 2px;
+              height: 32px;
+              background: #eaeaea;
+              border-radius: 12px;
+            }
+          }
+        }
+
+        &__item--shift-left {
+          flex-grow: 1;
+
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            flex-grow: 1;
+            margin-left: 25px;
+          }
+        }
+
+        &__item-settings--shift-right {
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            margin-left: 25px;
+          }
+        }
+
+        &__link {
+          display: block;
+          width: fit-content;
+        }
+
+        &__link-phone {
+          background: url('/src/img/phone.svg') no-repeat 50% 50%;
+        }
+
+        &__link-message {
+          background: url('/src/img/message.svg') no-repeat 50% 50%;
+        }
+
+        &__link-contact {
+          background: url('/src/img/contact.svg') no-repeat 50% 50%;
+        }
+
+        &__link-settings {
+          background: url('/src/img/settings.svg') no-repeat 50% 50%;
+        }
+
+        &__link-search {
+          background: url('/src/img/search.svg') no-repeat 50% 50%;
+        }
+
+        &__item-settings {
+          display: flex;
+
+          &::before {
+            content: '';
+            position: absolute;
+            align-self: center;
+            right: 130px;
+            width: 2px;
+            height: 32px;
+            background: #eaeaea;
+            border-radius: 12px;
+
+            @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+              right: 140px;
+            }
+          }
+        }
+
+        &__item--hidden {
+          display: none;
+
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            display: block;
+          }
+        }
+
+        .visualitty-hidden {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      padding: 0 16px 220px 16px;
+      height: 100%;
+
+      @media (min-width: $screen-md) and (max-width: $screen-lg) {
+        gap: 32px;
+        padding: 0 24px 120px 24px;
+      }
+
+      @media (min-width: $screen-lg) {
+        gap: 19px;
+        padding: 0 32px 120px 32px;
+      }
+
+      @media (min-width: $screen-mega-lg) {
+        padding-top: 25px;
+      }
+
+      .main-header {
         @media (min-width: $screen-lg) {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__tilte {
+          position: relative;
+          @include fontBold;
+          font-size: 28px;
+          line-height: 40px;
+
+          @media (min-width: $screen-lg) {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 40px;
+            background: #41f6d7;
+            left: -16px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            @media (min-width: $screen-md) and (max-width: $screen-lg) {
+              left: -24px;
+            }
+
+            @media (min-width: $screen-lg) {
+              left: -32px;
+            }
+          }
+        }
+
+        &__menu {
           display: none;
+
+          @media (min-width: $screen-mega-lg) {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+          }
         }
-        
-        .swiper-pagination-bullet {
-          height: 12px;
-          width: 12px;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #ff3e79;
         }
-  
-        .swiper-pagination-bullet-active {
-          background-color: #B5B6BC;
+
+        &__link-settings {
+          background: url('/src/img/settings.svg') no-repeat 50% 50%;
+        }
+
+        &__link-search {
+          background: url('/src/img/search.svg') no-repeat 50% 50%;
+        }
+
+        &__link {
+          @media (min-width: $screen-lg) {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: $text-color--black;
+            font-weight: 500;
+          }
         }
       }
 
-      .devises__swiper .swiper-pagination {
-        top: 10px;
+      .navigation {
+        &__list {
+          display: flex;
+          overflow-x: scroll;
+          white-space: pre;
+
+          @media (min-width: $screen-lg) {
+            flex-wrap: wrap;
+            overflow-x: visible;
+          }
+
+          &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+          }
+        }
+
+        &__item {
+          padding: 8px 16px;
+          color: $text-color--gray;
+
+          @media (min-width: $screen-lg) {
+            flex-grow: 1;
+          }
+
+          &:last-child {
+            @media (min-width: $screen-lg) {
+              flex-grow: 0;
+            }
+          }
+
+          &:hover {
+            padding: 6px 14px;
+            background-color: #ffffff;
+            border: 2px solid #b8ffec;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+
+    .about {
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+          display: flex;
+          flex-direction: row;
+          gap: 64px;
+          padding-right: 15px;
+        }
+
+        @media (min-width: $screen-lg) {
+          display: flex;
+          flex-direction: row;
+          gap: 50px;
+        }
       }
 
-      .prices__swiper .swiper-pagination {
-        top: 10px;
+      &__full-text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+          width: 310px;
+          gap: 16px;
+        }
+
+        @media (min-width: $screen-lg) {
+          width: 490px;
+          gap: 16px;
+        }
       }
-}
 
-.brand-swiper__button {
-    display: block;
-    position: absolute;
-    color: #1B1C21;
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    
-    padding-left: 30px;
-    cursor: pointer;
-    z-index: 10;
-    display: none;
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
 
-    @media (min-width: $screen-md) and (max-width: 1015px) {
-      display: block;
-      margin-top: 24px;
-      cursor: pointer;
-    }
+        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+          line-height: 20px;
+        }
 
-    @media (min-width: 1015px) and (max-width: $screen-lg) {
-      display: block;
-      margin-top: 24px;
-      cursor: pointer;
-    }
+        @media (min-width: $screen-lg) {
+          line-height: 20px;
+        }
 
-    @media (min-width: $screen-lg) {
-      display: block;
-      
-      margin-top: 24px;
-    }
+        &--hidden {
+          overflow: hidden;
+          height: 0;
+          transition: 0.2s;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: url(/src/img/arrow.svg) no-repeat 50% 50%;
-      width: 24px;
-      height: 24px;
-      left: 0;
-    }
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            display: block;
+            height: 36px;
+            margin-top: 4px;
+            transition: 0.2s;
+          }
 
-    &.button--open::before {
-      transform: rotate(180deg);
+          @media (min-width: $screen-mega-lg) {
+            display: block;
+            height: 80px;
+            margin-top: 4px;
+            transition: 0.2s;
+          }
 
-      @media (min-width: $screen-md) and (max-width: 1015px) {
-        transform: rotate(180deg);
+          &.openText {
+            overflow: visible;
+
+            @media (min-width: $screen-sm) {
+              height: auto;
+            }
+
+            @media (min-width: $screen-md) and (max-width: $screen-lg) {
+              height: 120px;
+            }
+
+            @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
+              height: 80px;
+            }
+          }
+        }
+      }
+
+      &__button {
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+
+        cursor: pointer;
+        letter-spacing: -0.2px;
+        @include fontMedium;
+
+        @media (min-width: $screen-lg) {
+          line-height: 24px;
+        }
+
+        &::before {
+          content: '';
+          position: relative;
+          background: url(/src/img/arrow.svg) no-repeat 50% 50%;
+          width: 24px;
+          height: 24px;
+          right: 3px;
+        }
+
+        .buttonText--open::before {
+          transform: rotate(180deg);
+        }
+      }
+
+      &__button-image {
+        background: url('/src/img/arrow.svg') no-repeat 100% 100%;
+        padding: 6px;
+      }
+
+      &__image {
+        margin: 0 -16px;
+
+        @media (min-width: $screen-md) and (max-width: $screen-lg) {
+          flex-grow: 1;
+          width: 360px;
+          height: auto;
+          border-radius: 6px;
+        }
+
+        @media (min-width: $screen-lg) {
+          width: 532px;
+          height: auto;
+          border-radius: 6px;
+        }
       }
     }
   }
+
+  .swiper-pagination {
+    position: relative;
+    z-index: 80;
+    margin-bottom: 5px;
+
+    @media (min-width: $screen-md) and (max-width: 1015px) {
+      display: none;
+    }
+
+    @media (min-width: 1015px) and (max-width: $screen-lg) {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      height: 12px;
+      width: 12px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #b5b6bc;
+    }
+  }
+
+  .main-section .swiper-pagination {
+    bottom: 5px;
+  }
+
+  .devises__swiper .swiper-pagination {
+    top: 10px;
+  }
+
+  .prices__swiper .swiper-pagination {
+    top: 10px;
+  }
+}
+
+.brand-swiper__button {
+  display: block;
+  position: absolute;
+  color: #1b1c21;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  padding-left: 30px;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+
+  @media (min-width: $screen-md) and (max-width: 1015px) {
+    display: block;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 1015px) and (max-width: $screen-lg) {
+    display: block;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: block;
+
+    margin-top: 24px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url(/src/img/arrow.svg) no-repeat 50% 50%;
+    width: 24px;
+    height: 24px;
+    left: 0;
+  }
+
+  &.button--open::before {
+    transform: rotate(180deg);
+
+    @media (min-width: $screen-md) and (max-width: 1015px) {
+      transform: rotate(180deg);
+    }
+  }
+}
 
 // .swiper-container {
 //     .swiper-pagination {
@@ -582,26 +567,25 @@ body {
 //       @media (min-width: $screen-md) and (max-width: 1015px) {
 //             display: none;
 //         }
-      
+
 //         @media (min-width: 1015px) and (max-width: $screen-lg) {
 //             display: none;
 //         }
-      
+
 //         @media (min-width: $screen-lg) {
 //             display: none;
 //         }
-  
+
 //       &-bullet {
 //         height: 12px; // устанавливаем высоту bullets на 12 px
 //         width: 12px; // устанавливаем ширину bullets на 12 px
 //         background: #DDD; // устанавливаем цвет неактивных bullets
 //         border-radius: 50%; // делаем их круглыми
 //         margin: 0 6px; // устанавливаем отступ по горизонтали в 6px
-  
+
 //         &-active {
 //           background: #B5B6BC; //устанавливем цвет для активных bullets
 //         }
 //       }
 //     }
 //   }
-

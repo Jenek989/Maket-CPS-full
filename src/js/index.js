@@ -9,24 +9,22 @@ const slideText = document.querySelector('.about__text--hidden');
 const buttonsMore = document.querySelectorAll('.button');
 const buttonText = document.querySelector('.about__button');
 
-// buttonBrands.addEventListener('click', () => {
-//   slideList.classList.toggle('hidden');
-//   buttonBrands.classList.toggle('button--open');
-//   buttonBrands.textContent = slideList.classList.contains('hidden') ? 'Скрыть' : 'Показать все';
-// });
-
-buttonsMore.forEach((button, index) =>{
+buttonsMore.forEach((button, index) => {
   button.addEventListener('click', () => {
     slideList[index].classList.toggle('hidden');
     button.classList.toggle('button--open');
-    button.textContent = slideList[index].classList.contains('hidden') ? 'Скрыть' : 'Показать все';
+    button.textContent = slideList[index].classList.contains('hidden')
+      ? 'Скрыть'
+      : 'Показать все';
   });
-})
+});
 
 buttonText.addEventListener('click', () => {
   slideText.classList.toggle('openText');
   buttonText.classList.toggle('buttonText--open');
-  buttonText.textContent = slideText.classList.contains('openText') ? 'Скрыть' : 'Читать далее';
+  buttonText.textContent = slideText.classList.contains('openText')
+    ? 'Скрыть'
+    : 'Читать далее';
 });
 
 // popup sidebar
@@ -37,65 +35,100 @@ const mainSidebarBg = document.querySelector('.sidebar-wrapper');
 mainBurger.addEventListener('click', () => {
   mainSidebar.classList.toggle('sidebar--open');
   mainSidebarBg.classList.toggle('sidebarBg--open');
+  document.body.classList.toggle('lock');
 });
 
-// poput cansel
-const mainSideBarCancel = document.querySelector('.sidebar-upper-menu__link-cancel');
+// poput sidebar cansel
+const mainSideBarCancel = document.querySelector(
+  '.sidebar-upper-menu__link-cancel'
+);
 
 mainSideBarCancel.addEventListener('click', () => {
   mainSidebar.classList.toggle('sidebar--open');
   mainSidebarBg.classList.toggle('sidebarBg--open');
+  document.body.classList.toggle('lock');
 });
+
+// popup sidebar off
 
 mainSidebarBg.addEventListener('click', (e) => {
-
-    if (e.target.className === "sidebar-wrapper sidebarBg--open") {
-
-      mainSidebar.classList.remove('sidebar--open');
-      mainSidebarBg.classList.remove('sidebarBg--open');
-
-    }
-});
-
-document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27) {
+  if (e.target.className === 'sidebar-wrapper sidebarBg--open') {
     mainSidebar.classList.remove('sidebar--open');
     mainSidebarBg.classList.remove('sidebarBg--open');
+    document.body.classList.remove('lock');
   }
 });
 
+// ESC off
 
-let init = false;
-const swiperCard = () => {
-  if (window.innerWidth <= 767) {
-    if (!init) {
-      init = true;
-      let swiper = new Swiper(".mySwiper", {
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    mainSidebar.classList.remove('sidebar--open');
+    mainSidebarBg.classList.remove('sidebarBg--open');
+    document.body.classList.remove('lock');
+  }
+});
+
+// popap phone message
+
+const popUpButtons = document.querySelectorAll('.popup');
+const popUpCall = document.querySelector('.popup-call');
+const popUpMessage = document.querySelector('.popup-feedback');
+
+popUpButtons.forEach((button, index) => {
+  button.addEventListener('click', (e) => {
+    if (index % 2 === 0) {
+      document.body.classList.toggle('lock');
+      popUpCall.classList.toggle('popup-call--visible');
+    } else {
+      document.body.classList.toggle('lock');
+      popUpMessage.classList.toggle('popup-feedback--visible');
+    }
+  });
+});
+
+popUpCall.addEventListener('click', (e) => {
+  if (e.target.className === 'popup-call popup-call--visible') {
+    popUpCall.classList.remove('popup-call--visible');
+    document.body.classList.remove('lock');
+  }
+});
+
+popUpMessage.addEventListener('click', (e) => {
+  if (e.target.className === 'popup-feedback popup-feedback--visible') {
+    popUpMessage.classList.remove('popup-feedback--visible');
+    document.body.classList.remove('lock');
+  }
+});
+
+var swiperElement = document.querySelector('.mySwiper');
+var swiper = null;
+
+function checkScreenSize() {
+  var screenSize = window.innerWidth;
+
+  if (screenSize <= 767) {
+    if (!swiper) {
+      swiper = new Swiper('.mySwiper', {
         modules: [Pagination],
         direction: 'horizontal',
         slidesPerView: 1,
         spaceBetween: 16,
         width: 240,
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-          init: true
+          el: '.swiper-pagination',
+          clickable: true
+        }
       });
     }
   } else {
-    
-      let swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
-        width: 220,
-      });
+    if (swiper) {
+      swiper.forEach((item) => item.destroy(false, true));
+      swiper = null;
     }
+    swiperElement.removeAttribute('style');
+  }
 }
 
-window.addEventListener("resize", () => {
-  setTimeout(() => swiperCard(), 500);
-});
-
-window.addEventListener('load', function() {
-  setTimeout(() => swiperCard(), 100);
-});
+checkScreenSize();
+window.addEventListener('resize', checkScreenSize);
