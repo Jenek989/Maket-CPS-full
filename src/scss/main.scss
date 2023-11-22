@@ -104,7 +104,7 @@ body {
         }
 
         &__link-burger {
-          background: url('img//burger.svg') no-repeat 50% 50%;
+          background: url('img/burger.svg') no-repeat 50% 50%;
 
           @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
             &::after {
@@ -141,23 +141,23 @@ body {
         }
 
         &__link-phone {
-          background: url('img//phone.svg') no-repeat 50% 50%;
+          background: url('img/phone.svg') no-repeat 50% 50%;
         }
 
         &__link-message {
-          background: url('img//message.svg') no-repeat 50% 50%;
+          background: url('img/message.svg') no-repeat 50% 50%;
         }
 
         &__link-contact {
-          background: url('img//contact.svg') no-repeat 50% 50%;
+          background: url('img/contact.svg') no-repeat 50% 50%;
         }
 
         &__link-settings {
-          background: url('img//settings.svg') no-repeat 50% 50%;
+          background: url('img/settings.svg') no-repeat 50% 50%;
         }
 
         &__link-search {
-          background: url('img//search.svg') no-repeat 50% 50%;
+          background: url('img/search.svg') no-repeat 50% 50%;
         }
 
         &__item-settings {
@@ -273,11 +273,11 @@ body {
         }
 
         &__link-settings {
-          background: url('img//settings.svg') no-repeat 50% 50%;
+          background: url('img/settings.svg') no-repeat 50% 50%;
         }
 
         &__link-search {
-          background: url('img//search.svg') no-repeat 50% 50%;
+          background: url('img/search.svg') no-repeat 50% 50%;
         }
 
         &__link {
@@ -434,7 +434,7 @@ body {
         &::before {
           content: '';
           position: relative;
-          background: url(img//arrow.svg) no-repeat 50% 50%;
+          background: url(img/arrow.svg) no-repeat 50% 50%;
           width: 24px;
           height: 24px;
           right: 3px;
@@ -446,7 +446,7 @@ body {
       }
 
       &__button-image {
-        background: url('img//arrow.svg') no-repeat 100% 100%;
+        background: url('img/arrow.svg') no-repeat 100% 100%;
         padding: 6px;
       }
 
@@ -544,7 +544,7 @@ body {
   &::before {
     content: '';
     position: absolute;
-    background: url(img//arrow.svg) no-repeat 50% 50%;
+    background: url(img/arrow.svg) no-repeat 50% 50%;
     width: 24px;
     height: 24px;
     left: 0;
