@@ -69,7 +69,7 @@ document.addEventListener('keydown', function (evt) {
   }
 });
 
-// popap phone message
+// popup phone message
 
 const popUpButtons = document.querySelectorAll('.popup');
 const popUpCall = document.querySelector('.popup-call');
@@ -99,6 +99,19 @@ popUpMessage.addEventListener('click', (e) => {
     popUpMessage.classList.remove('popup-feedback--visible');
     document.body.classList.remove('lock');
   }
+});
+
+// popup cancel
+
+const popupCancel = document.querySelectorAll('.button__cancel');
+
+popupCancel.forEach((button, index) => {
+  button.addEventListener('click', (e) => {
+    popUpCall.classList.remove('popup-call--visible');
+    document.body.classList.remove('lock');
+    popUpMessage.classList.remove('popup-feedback--visible');
+    document.body.classList.remove('lock');
+  });
 });
 
 var swiperElement = document.querySelector('.mySwiper');
