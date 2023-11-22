@@ -760,7 +760,7 @@ body {
         .body-wrapper .wrapper .header .upper-menu__item-burger {
           display: flex; }
         .body-wrapper .wrapper .header .upper-menu__link-burger {
-          background: url("/img/burger.svg") no-repeat 50% 50%; }
+          background: url("img/burger.svg") no-repeat 50% 50%; }
           @media (min-width: 768px) and (max-width: 1440px) {
             .body-wrapper .wrapper .header .upper-menu__link-burger::after {
               content: '';
@@ -786,15 +786,15 @@ body {
           width: -moz-fit-content;
           width: fit-content; }
         .body-wrapper .wrapper .header .upper-menu__link-phone {
-          background: url("/img/phone.svg") no-repeat 50% 50%; }
+          background: url("img/phone.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-message {
-          background: url("/img/message.svg") no-repeat 50% 50%; }
+          background: url("img/message.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-contact {
-          background: url("/img/contact.svg") no-repeat 50% 50%; }
+          background: url("img/contact.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-settings {
-          background: url("/img/settings.svg") no-repeat 50% 50%; }
+          background: url("img/settings.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-search {
-          background: url("/img/search.svg") no-repeat 50% 50%; }
+          background: url("img/search.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__item-settings {
           display: flex; }
           .body-wrapper .wrapper .header .upper-menu__item-settings::before {
@@ -884,9 +884,9 @@ body {
         border-radius: 50%;
         background-color: #ff3e79; }
       .body-wrapper .wrapper .main .main-header__link-settings {
-        background: url("/img/settings.svg") no-repeat 50% 50%; }
+        background: url("img/settings.svg") no-repeat 50% 50%; }
       .body-wrapper .wrapper .main .main-header__link-search {
-        background: url("/img/search.svg") no-repeat 50% 50%; }
+        background: url("img/search.svg") no-repeat 50% 50%; }
       @media (min-width: 1120px) {
         .body-wrapper .wrapper .main .main-header__link {
           display: flex;
@@ -999,14 +999,14 @@ body {
       .body-wrapper .wrapper .about__button::before {
         content: '';
         position: relative;
-        background: url(/img/arrow.svg) no-repeat 50% 50%;
+        background: url(img/arrow.svg) no-repeat 50% 50%;
         width: 24px;
         height: 24px;
         right: 3px; }
       .body-wrapper .wrapper .about__button .buttonText--open::before {
         transform: rotate(180deg); }
     .body-wrapper .wrapper .about__button-image {
-      background: url("/img/arrow.svg") no-repeat 100% 100%;
+      background: url("img/arrow.svg") no-repeat 100% 100%;
       padding: 6px; }
     .body-wrapper .wrapper .about__image {
       margin: 0 -16px; }
@@ -1075,7 +1075,7 @@ body {
   .brand-swiper__button::before {
     content: '';
     position: absolute;
-    background: url(/img/arrow.svg) no-repeat 50% 50%;
+    background: url(img/arrow.svg) no-repeat 50% 50%;
     width: 24px;
     height: 24px;
     left: 0; }
@@ -1259,7 +1259,7 @@ h2 {
           right: 16px;
           border: 2px solid #ff3e79;
           border-radius: 50%;
-          background: url("/img/arrow_right.svg") no-repeat 52% 50%; }
+          background: url("img/arrow_right.svg") no-repeat 52% 50%; }
       .main-section .brand-swiper .swiper .swiper-wrapper .swiper-slide__wrapper {
         display: flex;
         margin-left: 16px;
@@ -1333,14 +1333,14 @@ h2 {
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .icon-opacity:not(:hover) {
           transition: 0.2s; }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-cancel {
-          background: url("/img/cancel.svg") no-repeat 50% 50%; }
+          background: url("img/cancel.svg") no-repeat 50% 50%; }
           @media (min-width: 1440px) {
             .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-cancel {
               visibility: hidden;
               transform: translateX(-1000px);
               transition: 0.2s; } }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-search {
-          background: url("/img/loupe.svg") no-repeat 50% 50%; }
+          background: url("img/loupe.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__item--shift-left {
           flex-grow: 1;
           margin-left: 16px; }
@@ -1402,11 +1402,11 @@ h2 {
           display: flex;
           gap: 16px; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-phone {
-          background: url("/img/phone.svg") no-repeat 50% 50%; }
+          background: url("img/phone.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-message {
-          background: url("/img/message.svg") no-repeat 50% 50%; }
+          background: url("img/message.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-contact {
-          background: url("/img/contact.svg") no-repeat 50% 50%; }
+          background: url("img/contact.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__mail {
           align-self: flex-start; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__number {
@@ -1679,7 +1679,7 @@ h2 {
           right: 12px;
           width: 7px;
           height: 9px;
-          background-image: url("/img/arrow_right_white.svg"); }
+          background-image: url("img/arrow_right_white.svg"); }
         .prices__swiper .swiper-wrapper .swiper-slide .prices__button:hover {
           opacity: 0.5;
           transition: opacity 0.2s; }
@@ -1710,7 +1710,7 @@ h2 {
         margin-left: 5px;
         width: 13px;
         height: 13px;
-        background: url("/img/arrow_right.svg") no-repeat 100% 100%;
+        background: url("img/arrow_right.svg") no-repeat 100% 100%;
         background-size: contain; }
 
 .footer {
@@ -1917,7 +1917,7 @@ h2 {
         right: 12px;
         width: 7px;
         height: 9px;
-        background-image: url("/img/arrow_right_white.svg"); }
+        background-image: url("img/arrow_right_white.svg"); }
       .popup-call__input--submit:hover {
         opacity: 0.5;
         transition: opacity 0.2s; }
@@ -2027,7 +2027,7 @@ h2 {
         right: 12px;
         width: 7px;
         height: 9px;
-        background-image: url("/img/arrow_right_white.svg"); }
+        background-image: url("img/arrow_right_white.svg"); }
       .popup-feedback__input--submit:hover {
         opacity: 0.5;
         transition: opacity 0.2s; }
