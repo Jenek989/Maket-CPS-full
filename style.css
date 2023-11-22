@@ -1820,6 +1820,15 @@ h2 {
       height: 307px;
       border-radius: 6px; } }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79; }
+
 .popup-call {
   position: fixed;
   z-index: 1000;
@@ -1852,7 +1861,8 @@ h2 {
   .popup-call .button__cancel {
     position: absolute;
     top: 32px;
-    right: 473px; }
+    right: 473px;
+    cursor: pointer; }
     @media (max-width: 767px) {
       .popup-call .button__cancel {
         position: static; } }
@@ -1931,6 +1941,15 @@ h2 {
     .popup-call__info a {
       color: #ff3e79; }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79; }
+
 .popup-feedback {
   position: fixed;
   z-index: 1000;
@@ -1963,7 +1982,8 @@ h2 {
   .popup-feedback .button__cancel {
     position: absolute;
     top: 32px;
-    right: 473px; }
+    right: 473px;
+    cursor: pointer; }
     @media (max-width: 767px) {
       .popup-feedback .button__cancel {
         position: static; } }
