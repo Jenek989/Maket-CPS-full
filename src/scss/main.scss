@@ -82,6 +82,7 @@ body {
         width: 100%;
         background-color: white;
         border-bottom: 1px solid #d9fff5;
+        transition: 0.2s;
 
         @media (min-width: $screen-md) and (max-width: $screen-lg) {
           padding: 24px;
