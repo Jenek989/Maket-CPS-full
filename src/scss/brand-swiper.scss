@@ -195,7 +195,7 @@ h2 {
               right: 16px;
               border: 2px solid #ff3e79;
               border-radius: 50%;
-              background: url('/src/img/arrow_right.svg') no-repeat 52% 50%;
+              background: url('./src/img/arrow_right.svg') no-repeat 52% 50%;
             }
           }
 
@@ -243,7 +243,7 @@ h2 {
     //   &::before {
     //     content: "";
     //     position: absolute;
-    //     background: url(/src/img/arrow.svg) no-repeat 50% 50%;
+    //     background: url(./src/img/arrow.svg) no-repeat 50% 50%;
     //     width: 24px;
     //     height: 24px;
     //     left: 0;
