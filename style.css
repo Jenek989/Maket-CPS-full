@@ -744,7 +744,8 @@ body {
         padding: 14px;
         width: 100%;
         background-color: white;
-        border-bottom: 1px solid #d9fff5; }
+        border-bottom: 1px solid #d9fff5;
+        transition: 0.2s; }
         @media (min-width: 768px) and (max-width: 1120px) {
           .body-wrapper .wrapper .header .upper-menu {
             padding: 24px; } }
