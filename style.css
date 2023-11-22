@@ -1115,6 +1115,7 @@ h2 {
 .main-section .brand-swiper__title {
   background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
   padding: 16px 0;
+  margin-bottom: 16px;
   text-transform: uppercase;
   color: #7e7e82; }
   @media (min-width: 768px) and (max-width: 1015px) {
