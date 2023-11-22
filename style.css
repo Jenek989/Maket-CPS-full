@@ -698,7 +698,8 @@ body {
   margin: 0; }
 
 .lock {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-right: 17px; }
 
 .body-wrapper {
   margin: 0 auto; }
@@ -1158,7 +1159,7 @@ h2 {
         -moz-column-gap: 24px;
              column-gap: 24px;
         row-gap: 16px;
-        height: 150px;
+        height: 160px;
         width: inherit;
         margin: 0;
         overflow-y: hidden;
@@ -1824,9 +1825,10 @@ h2 {
   right: -2000px;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 8000px;
   height: 100%;
-  transition: 0.35s;
+  visibility: hidden;
+  transition: right 0.2s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
   .popup-call__body {
     margin-left: auto;
@@ -1841,6 +1843,7 @@ h2 {
         padding: 24px 16px;
         width: 320px; } }
   .popup-call--visible {
+    visibility: visible;
     right: 0; }
   .popup-call .button__cancel {
     position: absolute;
@@ -1930,9 +1933,10 @@ h2 {
   right: -2000px;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 8000px;
   height: 100%;
-  transition: 0.35s;
+  visibility: hidden;
+  transition: right 0.2s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
   .popup-feedback__body {
     margin-left: auto;
@@ -1947,6 +1951,7 @@ h2 {
         padding: 24px 16px;
         width: 320px; } }
   .popup-feedback--visible {
+    visibility: visible;
     right: 0; }
   .popup-feedback .button__cancel {
     position: absolute;
