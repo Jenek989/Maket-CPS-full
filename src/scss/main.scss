@@ -104,7 +104,7 @@ body {
         }
 
         &__link-burger {
-          background: url('img/burger.svg') no-repeat 50% 50%;
+          background: url('/img/burger.svg') no-repeat 50% 50%;
 
           @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
             &::after {
@@ -141,23 +141,23 @@ body {
         }
 
         &__link-phone {
-          background: url('img/phone.svg') no-repeat 50% 50%;
+          background: url('/img/phone.svg') no-repeat 50% 50%;
         }
 
         &__link-message {
-          background: url('img/message.svg') no-repeat 50% 50%;
+          background: url('/img/message.svg') no-repeat 50% 50%;
         }
 
         &__link-contact {
-          background: url('img/contact.svg') no-repeat 50% 50%;
+          background: url('/img/contact.svg') no-repeat 50% 50%;
         }
 
         &__link-settings {
-          background: url('img/settings.svg') no-repeat 50% 50%;
+          background: url('/img/settings.svg') no-repeat 50% 50%;
         }
 
         &__link-search {
-          background: url('img/search.svg') no-repeat 50% 50%;
+          background: url('/img/search.svg') no-repeat 50% 50%;
         }
 
         &__item-settings {
@@ -196,18 +196,18 @@ body {
     .main {
       display: flex;
       flex-direction: column;
-      padding: 24px 16px 220px 16px;
-      gap: 24px;
+      padding: 0 16px 220px 16px;
       height: 100%;
+      gap: 24px;
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         gap: 32px;
-        padding: 24px 24px 120px 24px;
+        padding: 0 24px 120px 24px;
       }
 
       @media (min-width: $screen-lg) {
         gap: 19px;
-        padding: 24px 32px 120px 32px;
+        padding: 0 32px 120px 32px;
       }
 
       @media (min-width: $screen-mega-lg) {
@@ -225,8 +225,7 @@ body {
           @include fontBold;
           font-size: 28px;
           line-height: 40px;
-          margin: 0;
-          margin-top: 24px;
+          margin-bottom: 0;
 
           @media (min-width: $screen-lg) {
             display: flex;
@@ -274,11 +273,11 @@ body {
         }
 
         &__link-settings {
-          background: url('img/settings.svg') no-repeat 50% 50%;
+          background: url('/img/settings.svg') no-repeat 50% 50%;
         }
 
         &__link-search {
-          background: url('img/search.svg') no-repeat 50% 50%;
+          background: url('/img/search.svg') no-repeat 50% 50%;
         }
 
         &__link {
@@ -435,7 +434,7 @@ body {
         &::before {
           content: '';
           position: relative;
-          background: url(img/arrow.svg) no-repeat 50% 50%;
+          background: url(/img/arrow.svg) no-repeat 50% 50%;
           width: 24px;
           height: 24px;
           right: 3px;
@@ -447,7 +446,7 @@ body {
       }
 
       &__button-image {
-        background: url('img/arrow.svg') no-repeat 100% 100%;
+        background: url('/img/arrow.svg') no-repeat 100% 100%;
         padding: 6px;
       }
 
@@ -545,7 +544,7 @@ body {
   &::before {
     content: '';
     position: absolute;
-    background: url(img/arrow.svg) no-repeat 50% 50%;
+    background: url(/img/arrow.svg) no-repeat 50% 50%;
     width: 24px;
     height: 24px;
     left: 0;
@@ -559,36 +558,3 @@ body {
     }
   }
 }
-
-// .swiper-container {
-//     .swiper-pagination {
-//       position: static;
-//       padding-top: 16px;
-//       display: flex; //изменяем тип отображения на flex-контейнер
-//       justify-content: center; //центрируем bullets по горизонтали
-
-//       @media (min-width: $screen-md) and (max-width: 1015px) {
-//             display: none;
-//         }
-
-//         @media (min-width: 1015px) and (max-width: $screen-lg) {
-//             display: none;
-//         }
-
-//         @media (min-width: $screen-lg) {
-//             display: none;
-//         }
-
-//       &-bullet {
-//         height: 12px; // устанавливаем высоту bullets на 12 px
-//         width: 12px; // устанавливаем ширину bullets на 12 px
-//         background: #DDD; // устанавливаем цвет неактивных bullets
-//         border-radius: 50%; // делаем их круглыми
-//         margin: 0 6px; // устанавливаем отступ по горизонтали в 6px
-
-//         &-active {
-//           background: #B5B6BC; //устанавливем цвет для активных bullets
-//         }
-//       }
-//     }
-//   }
