@@ -84,15 +84,13 @@ const swiperCard = () => {
       });
     }
   } else {
-    init = false;
+    
       let swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
         width: 220,
       });
-  }
+    }
 }
-
-swiperCard();
 
 window.addEventListener("resize", () => {
   setTimeout(() => swiperCard(), 500);
