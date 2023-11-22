@@ -9,7 +9,6 @@
  *
  * Released on: January 30, 2023
  */
-
 @font-face {
   font-family: 'swiper-icons';
   src: url("data:application/font-woff;charset=utf-8;base64, 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") format("woff");
@@ -761,7 +760,7 @@ body {
         .body-wrapper .wrapper .header .upper-menu__item-burger {
           display: flex; }
         .body-wrapper .wrapper .header .upper-menu__link-burger {
-          background: url("img/burger.svg") no-repeat 50% 50%; }
+          background: url("/img/burger.svg") no-repeat 50% 50%; }
           @media (min-width: 768px) and (max-width: 1440px) {
             .body-wrapper .wrapper .header .upper-menu__link-burger::after {
               content: '';
@@ -787,15 +786,15 @@ body {
           width: -moz-fit-content;
           width: fit-content; }
         .body-wrapper .wrapper .header .upper-menu__link-phone {
-          background: url("img/phone.svg") no-repeat 50% 50%; }
+          background: url("/img/phone.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-message {
-          background: url("img/message.svg") no-repeat 50% 50%; }
+          background: url("/img/message.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-contact {
-          background: url("img/contact.svg") no-repeat 50% 50%; }
+          background: url("/img/contact.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-settings {
-          background: url("img/settings.svg") no-repeat 50% 50%; }
+          background: url("/img/settings.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__link-search {
-          background: url("img/search.svg") no-repeat 50% 50%; }
+          background: url("/img/search.svg") no-repeat 50% 50%; }
         .body-wrapper .wrapper .header .upper-menu__item-settings {
           display: flex; }
           .body-wrapper .wrapper .header .upper-menu__item-settings::before {
@@ -820,7 +819,8 @@ body {
     .body-wrapper .wrapper .main {
       display: flex;
       flex-direction: column;
-      padding: 0 16px 220px 16px;
+      padding: 24px 16px 220px 16px;
+      gap: 24px;
       height: 100%; }
       @media (min-width: 768px) and (max-width: 1120px) {
         .body-wrapper .wrapper .main {
@@ -843,7 +843,12 @@ body {
         font-weight: 600;
         line-height: 28px;
         font-size: 28px;
-        line-height: 40px; }
+        line-height: 40px;
+        margin: 0;
+        margin-top: 24px; }
+        @media (min-width: 768px) {
+          .body-wrapper .wrapper .main .main-header__tilte {
+            margin: 0.67em; } }
         @media (min-width: 1120px) {
           .body-wrapper .wrapper .main .main-header__tilte {
             display: flex;
@@ -879,9 +884,9 @@ body {
         border-radius: 50%;
         background-color: #ff3e79; }
       .body-wrapper .wrapper .main .main-header__link-settings {
-        background: url("img/settings.svg") no-repeat 50% 50%; }
+        background: url("/img/settings.svg") no-repeat 50% 50%; }
       .body-wrapper .wrapper .main .main-header__link-search {
-        background: url("img/search.svg") no-repeat 50% 50%; }
+        background: url("/img/search.svg") no-repeat 50% 50%; }
       @media (min-width: 1120px) {
         .body-wrapper .wrapper .main .main-header__link {
           display: flex;
@@ -932,7 +937,6 @@ body {
     .body-wrapper .wrapper .about__full-text {
       display: flex;
       flex-direction: column;
-      margin-top: 24px;
       gap: 8px; }
       @media (min-width: 768px) and (max-width: 1120px) {
         .body-wrapper .wrapper .about__full-text {
@@ -995,14 +999,14 @@ body {
       .body-wrapper .wrapper .about__button::before {
         content: '';
         position: relative;
-        background: url(img/arrow.svg) no-repeat 50% 50%;
+        background: url(/img/arrow.svg) no-repeat 50% 50%;
         width: 24px;
         height: 24px;
         right: 3px; }
       .body-wrapper .wrapper .about__button .buttonText--open::before {
         transform: rotate(180deg); }
     .body-wrapper .wrapper .about__button-image {
-      background: url("img/arrow.svg") no-repeat 100% 100%;
+      background: url("/img/arrow.svg") no-repeat 100% 100%;
       padding: 6px; }
     .body-wrapper .wrapper .about__image {
       margin: 0 -16px; }
@@ -1071,7 +1075,7 @@ body {
   .brand-swiper__button::before {
     content: '';
     position: absolute;
-    background: url(img/arrow.svg) no-repeat 50% 50%;
+    background: url(/img/arrow.svg) no-repeat 50% 50%;
     width: 24px;
     height: 24px;
     left: 0; }
@@ -1255,7 +1259,7 @@ h2 {
           right: 16px;
           border: 2px solid #ff3e79;
           border-radius: 50%;
-          background: url("img/arrow_right.svg") no-repeat 52% 50%; }
+          background: url("/img/arrow_right.svg") no-repeat 52% 50%; }
       .main-section .brand-swiper .swiper .swiper-wrapper .swiper-slide__wrapper {
         display: flex;
         margin-left: 16px;
@@ -1329,14 +1333,14 @@ h2 {
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu .icon-opacity:not(:hover) {
           transition: 0.2s; }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-cancel {
-          background: url("img/cancel.svg") no-repeat 50% 50%; }
+          background: url("/img/cancel.svg") no-repeat 50% 50%; }
           @media (min-width: 1440px) {
             .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-cancel {
               visibility: hidden;
               transform: translateX(-1000px);
               transition: 0.2s; } }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__link-search {
-          background: url("img/loupe.svg") no-repeat 50% 50%; }
+          background: url("/img/loupe.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-header .sidebar-upper-menu__item--shift-left {
           flex-grow: 1;
           margin-left: 16px; }
@@ -1398,11 +1402,11 @@ h2 {
           display: flex;
           gap: 16px; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-phone {
-          background: url("img/phone.svg") no-repeat 50% 50%; }
+          background: url("/img/phone.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-message {
-          background: url("img/message.svg") no-repeat 50% 50%; }
+          background: url("/img/message.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__link-contact {
-          background: url("img/contact.svg") no-repeat 50% 50%; }
+          background: url("/img/contact.svg") no-repeat 50% 50%; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__mail {
           align-self: flex-start; }
         .sidebar-wrapper .sidebar .sidebar-footer .sidebar-contacts__number {
@@ -1675,7 +1679,7 @@ h2 {
           right: 12px;
           width: 7px;
           height: 9px;
-          background-image: url("img/arrow_right_white.svg"); }
+          background-image: url("/img/arrow_right_white.svg"); }
         .prices__swiper .swiper-wrapper .swiper-slide .prices__button:hover {
           opacity: 0.5;
           transition: opacity 0.2s; }
@@ -1706,7 +1710,7 @@ h2 {
         margin-left: 5px;
         width: 13px;
         height: 13px;
-        background: url("img/arrow_right.svg") no-repeat 100% 100%;
+        background: url("/img/arrow_right.svg") no-repeat 100% 100%;
         background-size: contain; }
 
 .footer {
@@ -1913,7 +1917,7 @@ h2 {
         right: 12px;
         width: 7px;
         height: 9px;
-        background-image: url("img/arrow_right_white.svg"); }
+        background-image: url("/img/arrow_right_white.svg"); }
       .popup-call__input--submit:hover {
         opacity: 0.5;
         transition: opacity 0.2s; }
@@ -2023,7 +2027,7 @@ h2 {
         right: 12px;
         width: 7px;
         height: 9px;
-        background-image: url("img/arrow_right_white.svg"); }
+        background-image: url("/img/arrow_right_white.svg"); }
       .popup-feedback__input--submit:hover {
         opacity: 0.5;
         transition: opacity 0.2s; }
