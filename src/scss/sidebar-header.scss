@@ -46,15 +46,6 @@
       }
     }
 
-    .opacity:hover {
-      color: rgba(126, 126, 130, 0.8);
-      transition: 0.2s;
-    }
-
-    .opacity:not(:hover) {
-      transition: 0.2s;
-    }
-
     .sidebar-header {
       padding: 15px 24px 0 24px;
 
@@ -73,23 +64,10 @@
         }
 
         .icon {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background-color: #ff3e79;
+          @include  icon;
         }
 
-        .icon-opacity:hover {
-          background-color: rgba(255, 110, 155, 0.9);
-          transition: 0.2s;
-        }
-
-        .icon-opacity:not(:hover) {
-          transition: 0.2s;
-        }
+        @include iconOpacity;
 
         &__link-cancel {
           background: url('../img/cancel.svg') no-repeat 50% 50%;
