@@ -196,7 +196,8 @@ body {
     .main {
       display: flex;
       flex-direction: column;
-      padding: 0 16px 220px 16px;
+      padding: 24px 16px 220px 16px;
+      gap: 24px;
       height: 100%;
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
@@ -224,6 +225,7 @@ body {
           @include fontBold;
           font-size: 28px;
           line-height: 40px;
+          margin: 0;
 
           @media (min-width: $screen-lg) {
             display: flex;
@@ -353,7 +355,6 @@ body {
       &__full-text {
         display: flex;
         flex-direction: column;
-        margin-top: 24px;
         gap: 8px;
 
         @media (min-width: $screen-md) and (max-width: $screen-lg) {
