@@ -540,4 +540,14 @@ li {
   }
 }
 
+.swiper-slide:hover {
+  box-shadow: inset 0 0 1px 0.5px #ff3e79;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+.swiper-slide:not(:hover) {
+  transition: 0.2s;
+}
+
 @include iconOpacity;

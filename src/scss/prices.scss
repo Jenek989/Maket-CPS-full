@@ -73,7 +73,7 @@ h2 {
 
   .swiper-wrapper {
     @media (min-width: $screen-md) {
-      padding: 0 16px;
+      // padding: 0 16px;
       box-sizing: border-box;
       background: #ffffff;
       border-radius: 6px;
@@ -84,7 +84,7 @@ h2 {
     }
 
     @media (min-width: $screen-mega-lg) {
-      padding: 0 24px;
+      // padding: 0 24px;
       width: 1056px;
     }
   }
@@ -98,8 +98,10 @@ h2 {
     background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 6px;
+    padding: 0 16px;
     @media (max-width: 767px) {
       padding: 16px;
+      padding: 0 24px;
     }
     @media (min-width: $screen-md) {
       align-items: center;
