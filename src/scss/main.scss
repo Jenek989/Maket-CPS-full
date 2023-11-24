@@ -298,6 +298,7 @@ li {
       &__item {
         padding: 8px 16px;
         color: $text-color--gray;
+        cursor: pointer;
 
         @media (min-width: $screen-lg) {
           flex-grow: 1;

@@ -180,10 +180,5 @@ h2 {
 
   .prices__button {
     @include buttonOreder;
-
-    &:hover {
-      opacity: 0.5;
-      transition: opacity 0.2s;
-    }
   }
 }
