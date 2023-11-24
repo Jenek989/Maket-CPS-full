@@ -695,6 +695,15 @@ li {
 .visualitty-hidden {
   display: none; }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79; }
+
 .body-wrapper {
   color: #1b1c21;
   margin: 0 auto;
@@ -747,18 +756,10 @@ li {
     @media (min-width: 1120px) and (max-width: 1440px) {
       .body-wrapper .upper-menu {
         padding: 24px; } }
-    .body-wrapper .upper-menu .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ff3e79; }
     .body-wrapper .upper-menu__item-burger {
       display: flex; }
     .body-wrapper .upper-menu__link-burger {
-      background: url(./static/burger.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/burger.svg) no-repeat 50% 50%; }
       @media (min-width: 768px) and (max-width: 1440px) {
         .body-wrapper .upper-menu__link-burger::after {
           content: '';
@@ -784,15 +785,15 @@ li {
       width: -moz-fit-content;
       width: fit-content; }
     .body-wrapper .upper-menu__link-phone {
-      background: url(./static/phone.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/phone.svg) no-repeat 50% 50%; }
     .body-wrapper .upper-menu__link-message {
-      background: url(./static/message.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/message.svg) no-repeat 50% 50%; }
     .body-wrapper .upper-menu__link-contact {
-      background: url(./static/contact.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/contact.svg) no-repeat 50% 50%; }
     .body-wrapper .upper-menu__link-settings {
-      background: url(./static/settings.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/settings.svg) no-repeat 50% 50%; }
     .body-wrapper .upper-menu__link-search {
-      background: url(./static/search.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/search.svg) no-repeat 50% 50%; }
     .body-wrapper .upper-menu__item-settings {
       display: flex; }
       .body-wrapper .upper-menu__item-settings::before {
@@ -867,18 +868,10 @@ li {
           display: flex;
           align-items: center;
           gap: 32px; } }
-    .body-wrapper .main .main-header .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ff3e79; }
     .body-wrapper .main .main-header__link-settings {
-      background: url(./static/settings.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/settings.svg) no-repeat 50% 50%; }
     .body-wrapper .main .main-header__link-search {
-      background: url(./static/search.svg) no-repeat 50% 50%; }
+      background: #ff3e79 url(./static/search.svg) no-repeat 50% 50%; }
     @media (min-width: 1120px) {
       .body-wrapper .main .main-header__link {
         display: flex;
@@ -1302,28 +1295,20 @@ li {
       align-items: center;
       width: 100%;
       height: 90px; }
-      .sidebar-wrapper .sidebar .sidebar-upper-menu .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #ff3e79; }
       .sidebar-wrapper .sidebar .sidebar-upper-menu .opacity:hover {
         opacity: 0.7;
         transition: 0.2s; }
       .sidebar-wrapper .sidebar .sidebar-upper-menu .opacity:not(:hover) {
         transition: 0.2s; }
       .sidebar-wrapper .sidebar .sidebar-upper-menu__link-cancel {
-        background: url(./static/cancel.svg) no-repeat 50% 50%; }
+        background: #ff3e79 url(./static/cancel.svg) no-repeat 50% 50%; }
         @media (min-width: 1440px) {
           .sidebar-wrapper .sidebar .sidebar-upper-menu__link-cancel {
             visibility: hidden;
             transform: translateX(-1000px);
             transition: 0.2s; } }
       .sidebar-wrapper .sidebar .sidebar-upper-menu__link-search {
-        background: url(./static/loupe.svg) no-repeat 50% 50%; }
+        background: #ff3e79 url(./static/loupe.svg) no-repeat 50% 50%; }
       .sidebar-wrapper .sidebar .sidebar-upper-menu__item--shift-left {
         flex-grow: 1;
         margin-left: 16px; }
@@ -1368,14 +1353,6 @@ li {
       gap: 16px; }
       .sidebar-wrapper .sidebar .sidebar-contacts .visualitty-hidden {
         display: none; }
-      .sidebar-wrapper .sidebar .sidebar-contacts .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #ff3e79; }
       .sidebar-wrapper .sidebar .sidebar-contacts .icon-opacity:hover {
         background-color: rgba(255, 110, 155, 0.9);
         transition: 0.2s; }
@@ -1385,11 +1362,11 @@ li {
         display: flex;
         gap: 16px; }
       .sidebar-wrapper .sidebar .sidebar-contacts__link-phone {
-        background: url(./static/phone.svg) no-repeat 50% 50%; }
+        background: #ff3e79 url(./static/phone.svg) no-repeat 50% 50%; }
       .sidebar-wrapper .sidebar .sidebar-contacts__link-message {
-        background: url(./static/message.svg) no-repeat 50% 50%; }
+        background: #ff3e79 url(./static/message.svg) no-repeat 50% 50%; }
       .sidebar-wrapper .sidebar .sidebar-contacts__link-contact {
-        background: url(./static/contact.svg) no-repeat 50% 50%; }
+        background: #ff3e79 url(./static/contact.svg) no-repeat 50% 50%; }
       .sidebar-wrapper .sidebar .sidebar-contacts__mail {
         align-self: flex-start; }
       .sidebar-wrapper .sidebar .sidebar-contacts__number {
@@ -1719,15 +1696,6 @@ h2 {
       .footer__text:last-child {
         text-align: right; } }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ff3e79; }
-
 .popup-call {
   font-family: 'TT Lakes';
   font-size: 14px;
@@ -1764,8 +1732,7 @@ h2 {
   .popup-call .button__cancel {
     position: absolute;
     top: 32px;
-    right: 473px;
-    cursor: pointer; }
+    right: 473px; }
     @media (max-width: 767px) {
       .popup-call .button__cancel {
         position: static; } }
@@ -1842,15 +1809,6 @@ h2 {
     color: #7e7e82; }
     .popup-call__info a {
       color: #ff3e79; }
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ff3e79; }
 
 .popup-feedback {
   font-family: 'TT Lakes';
