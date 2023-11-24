@@ -1408,7 +1408,7 @@ li {
     overflow: hidden; }
   .devises .swiper-wrapper {
     height: 160px;
-    transition: height 0.3s; }
+    transition: 0.3s; }
     @media (min-width: 768px) {
       .devises .swiper-wrapper {
         flex-wrap: wrap;
