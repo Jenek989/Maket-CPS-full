@@ -55,7 +55,6 @@
 }
 
 @mixin buttonOreder {
-  cursor: pointer;
   display: block;
   position: relative;
   @include fontBoldPriceButton;
