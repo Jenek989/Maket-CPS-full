@@ -1064,6 +1064,14 @@ li {
       .brand-swiper__button.button--open::before {
         transform: rotate(180deg); } }
 
+.swiper-slide:hover {
+  box-shadow: inset 0 0 1px 0.5px #ff3e79;
+  transition: 0.2s;
+  opacity: 0.8; }
+
+.swiper-slide:not(:hover) {
+  transition: 0.2s; }
+
 .opacity:hover {
   opacity: 0.7;
   transition: 0.2s; }
@@ -1517,7 +1525,6 @@ h2 {
     overflow: hidden; }
   @media (min-width: 768px) {
     .prices .swiper-wrapper {
-      padding: 0 16px;
       box-sizing: border-box;
       background: #ffffff;
       border-radius: 6px;
@@ -1527,7 +1534,6 @@ h2 {
       height: 324px; } }
   @media (min-width: 1440px) {
     .prices .swiper-wrapper {
-      padding: 0 24px;
       width: 1056px; } }
   .prices .swiper-slide {
     display: flex;
@@ -1537,10 +1543,12 @@ h2 {
     height: 200px;
     background: #ffffff;
     border: 1px solid #eaeaea;
-    border-radius: 6px; }
+    border-radius: 6px;
+    padding: 0 16px; }
     @media (max-width: 767px) {
       .prices .swiper-slide {
-        padding: 16px; } }
+        padding: 16px;
+        padding: 0 24px; } }
     @media (min-width: 768px) {
       .prices .swiper-slide {
         align-items: center;
