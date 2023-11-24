@@ -29,6 +29,16 @@ li {
   display: none;
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79;
+}
+
 .body-wrapper {
   color: $text-color--black;
   margin: 0 auto;
@@ -89,18 +99,14 @@ li {
 
     @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
       padding: 24px;
-    }
-
-    .icon {
-      @include icon;
-    }
+    }    
 
     &__item-burger {
       display: flex;
     }
 
     &__link-burger {
-      background: url('../img/burger.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/burger.svg') no-repeat 50% 50%;
 
       @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
         &::after {
@@ -137,23 +143,23 @@ li {
     }
 
     &__link-phone {
-      background: url('../img/phone.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/phone.svg') no-repeat 50% 50%;
     }
 
     &__link-message {
-      background: url('../img/message.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/message.svg') no-repeat 50% 50%;
     }
 
     &__link-contact {
-      background: url('../img/contact.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/contact.svg') no-repeat 50% 50%;
     }
 
     &__link-settings {
-      background: url('../img/settings.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/settings.svg') no-repeat 50% 50%;
     }
 
     &__link-search {
-      background: url('../img/search.svg') no-repeat 50% 50%;
+      background: #ff3e79 url('../img/search.svg') no-repeat 50% 50%;
     }
 
     &__item-settings {
@@ -253,16 +259,12 @@ li {
         }
       }
 
-      .icon {
-        @include icon;
-      }
-
       &__link-settings {
-        background: url('../img/settings.svg') no-repeat 50% 50%;
+        background: #ff3e79 url('../img/settings.svg') no-repeat 50% 50%;
       }
 
       &__link-search {
-        background: url('../img/search.svg') no-repeat 50% 50%;
+        background: #ff3e79 url('../img/search.svg') no-repeat 50% 50%;
       }
 
       &__link {
