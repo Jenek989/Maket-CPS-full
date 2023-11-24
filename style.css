@@ -1419,7 +1419,6 @@ li {
   .devises .swiper-slide {
     width: 220px;
     height: 160px;
-    padding: 16px;
     background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 6px; }
@@ -1431,7 +1430,8 @@ li {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 16px; }
   .devises .swiper-slide_image-button {
     align-self: flex-end;
     position: relative;
