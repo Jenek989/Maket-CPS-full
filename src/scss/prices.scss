@@ -84,7 +84,6 @@ h2 {
     }
 
     @media (min-width: $screen-mega-lg) {
-      // padding: 0 24px;
       width: 1056px;
     }
   }
@@ -100,8 +99,8 @@ h2 {
     border-radius: 6px;
     padding: 0 16px;
     @media (max-width: 767px) {
+      cursor: pointer;
       padding: 16px;
-      padding: 0 24px;
     }
     @media (min-width: $screen-md) {
       align-items: center;
