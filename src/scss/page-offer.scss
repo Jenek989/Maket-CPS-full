@@ -6,7 +6,7 @@
   &__info {
     line-height: 20px;
     letter-spacing: 0.2px;
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       width: 421px;
     }
   }

@@ -105,7 +105,7 @@ popUpMessage.addEventListener('click', (e) => {
 
 const popupCancel = document.querySelectorAll('.button__cancel');
 
-popupCancel.forEach((button, index) => {
+popupCancel.forEach((button) => {
   button.addEventListener('click', (e) => {
     popUpCall.classList.remove('popup-call--visible');
     document.body.classList.remove('lock');

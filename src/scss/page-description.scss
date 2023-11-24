@@ -32,7 +32,7 @@
       height: 176px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       flex-direction: row;
       justify-content: space-between;
 
@@ -54,7 +54,7 @@
         .hidden {
           height: 220px;
         }
-        @media (min-width: 1440px) {
+        @media (min-width: $screen-mega-lg) {
           height: 160px;
         }
       }
@@ -68,12 +68,12 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-md) {
     gap: 32px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $screen-mega-lg) {
   .page-description {
     gap: 8px;
     .main__section {
