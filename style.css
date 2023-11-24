@@ -1548,8 +1548,8 @@ h2 {
     padding: 0 16px; }
     @media (max-width: 767px) {
       .prices .swiper-slide {
-        padding: 16px;
-        padding: 0 24px; } }
+        cursor: pointer;
+        padding: 16px; } }
     @media (min-width: 768px) {
       .prices .swiper-slide {
         align-items: center;
