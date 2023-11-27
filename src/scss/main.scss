@@ -296,6 +296,10 @@ body {
         white-space: pre;
         margin-left: 16px;
 
+        @media (min-width: $screen-md) {
+          margin-left: 0;
+        }
+
         @media (min-width: $screen-lg) {
           flex-wrap: wrap;
           overflow-x: visible;
