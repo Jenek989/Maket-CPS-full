@@ -56,15 +56,6 @@
       display: flex;
       align-items: flex-start;
 
-      &::before {
-        @include gradientBefore;
-        height: 70px;     
-        
-        @media (min-width: $screen-md) {
-          display: none;
-        }
-      }
-    
       &::after {
         @include gradientAfter;
         height: 70px;
@@ -171,7 +162,7 @@
         height: 72px;
         flex-grow: 1;
       }
-    }    
+    }
   }
 
   .swiper-slide {

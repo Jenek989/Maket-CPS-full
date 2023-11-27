@@ -294,36 +294,15 @@ body {
         display: flex;
         overflow-x: scroll;
         white-space: pre;
+        margin-left: 16px;
 
         @media (min-width: $screen-lg) {
           flex-wrap: wrap;
           overflow-x: visible;
         }
 
-        &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          width: 24px;
-          height: 40px;
-          background: linear-gradient(
-            90deg,
-            #f8f8f8 16.84%,
-            rgba(248, 248, 248, 0) 100%
-          );
-        }
-
         &::after {
-          content: '';
-          position: absolute;
-          right: 0;
-          width: 24px;
-          height: 40px;
-          background: linear-gradient(
-            270deg,
-            #f8f8f8 16.84%,
-            rgba(248, 248, 248, 0) 100%
-          );
+          @include gradientAfter height: 40px;
         }
 
         &::-webkit-scrollbar {
@@ -480,7 +459,6 @@ body {
     }
 
     &__image {
-
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         flex-grow: 1;
         width: 360px;
@@ -584,6 +562,10 @@ body {
       transform: rotate(180deg);
     }
   }
+}
+
+.mySwiper {
+  margin-left: 16px;
 }
 
 .swiper-slide:hover {

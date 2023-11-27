@@ -77,15 +77,6 @@ h2 {
   &__swiper {
     overflow: hidden;
 
-    &::before {
-      @include gradientBefore;
-      height: 200px;
-
-      @media (min-width: $screen-md) {
-        display: none;
-      }
-    }
-  
     &::after {
       @include gradientAfter;
       margin-top: -225px;
@@ -110,7 +101,6 @@ h2 {
     }
 
     @media (min-width: $screen-mega-lg) {
-      width: 1056px;
       padding: 0 24px;
     }
   }

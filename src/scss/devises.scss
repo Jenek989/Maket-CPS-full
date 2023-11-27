@@ -32,15 +32,6 @@
   &__swiper {
     overflow: hidden;
 
-    &::before {
-      @include gradientBefore;
-      height: 158px;   
-      
-      @media (min-width: $screen-md) {
-        display: none;
-      }
-    }
-  
     &::after {
       @include gradientAfter;
       margin-top: -190px;
@@ -57,14 +48,13 @@
     transition: 0.3s;
 
     @media (min-width: $screen-md) {
-      
       flex-wrap: wrap;
       gap: 24px;
     }
 
     @media (min-width: $screen-mega-lg) {
       gap: 32px;
-    }    
+    }
   }
 
   .swiper-slide {

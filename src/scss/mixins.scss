@@ -107,19 +107,6 @@
   }
 }
 
-@mixin gradientBefore {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 24px;
-  background: linear-gradient(
-    90deg,
-    #f8f8f8 16.84%,
-    rgba(248, 248, 248, 0) 100%
-  );
-  z-index: 100;
-}
-
 @mixin gradientAfter {
   content: '';
   position: absolute;
