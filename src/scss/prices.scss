@@ -60,10 +60,17 @@ h2 {
     vertical-align: middle;
     color: $text-color--gray;
     background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
-    padding: 16px 0;
+    padding: 16px;
+    border-top: 1px solid $color-line--blue;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      padding-left: 24px;
+      margin: 0 -24px 24px;
+    }
 
     @media (min-width: $screen-lg) {
-      width: 1090px;
+      padding-left: 32px;
+      margin: 0 -32px 24px;
     }
   }
 
@@ -73,7 +80,7 @@ h2 {
 
   .swiper-wrapper {
     @media (min-width: $screen-md) {
-      // padding: 0 16px;
+      padding: 0 16px;
       box-sizing: border-box;
       background: #ffffff;
       border-radius: 6px;
@@ -85,6 +92,7 @@ h2 {
 
     @media (min-width: $screen-mega-lg) {
       width: 1056px;
+      padding: 0 24px;
     }
   }
 
@@ -97,7 +105,6 @@ h2 {
     background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-    padding: 0 16px;
     @media (max-width: 767px) {
       cursor: pointer;
       padding: 16px;
@@ -115,7 +122,11 @@ h2 {
       &:last-child {
         border-bottom: none;
       }
-    }    
+    }
+  }
+
+  &.swiper-slide:hover {
+    box-shadow: none;
   }
 
   .prices__title-item {

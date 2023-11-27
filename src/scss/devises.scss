@@ -10,11 +10,18 @@
   .section_title {
     text-transform: uppercase;
     color: $text-color--gray;
-    padding: 16px 0;
+    padding: 16px;
     background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
+    border-top: 1px solid $color-line--blue;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      padding-left: 24px;
+      margin: 0 -24px 24px;
+    }
 
     @media (min-width: $screen-lg) {
-      width: $screen-lg;
+      padding-left: 32px;
+      margin: 0 -32px 24px;
     }
   }
 
@@ -23,7 +30,7 @@
   }
 
   &__swiper {
-    overflow: hidden;  
+    overflow: hidden;
   }
 
   .swiper-wrapper {

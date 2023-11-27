@@ -39,6 +39,10 @@ li {
   background-color: #ff3e79;
 }
 
+body {
+  font-family: 'TT Lakes';
+}
+
 .body-wrapper {
   color: $text-color--black;
   margin: 0 auto;
@@ -68,7 +72,7 @@ li {
 
     @media (min-width: $screen-mega-lg) {
       transform: translateX(160px);
-    }    
+    }
   }
 
   .header {
@@ -90,7 +94,7 @@ li {
     padding: 14px;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid #d9fff5;
+    border-bottom: 1px solid $color-line--blue;
     transition: 0.2s;
 
     @media (min-width: $screen-md) and (max-width: $screen-lg) {
@@ -99,14 +103,10 @@ li {
 
     @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
       padding: 24px;
-    }    
+    }
 
     &__item-burger {
       display: flex;
-    }
-
-    &__link-burger {
-      background: #ff3e79 url('../img/burger.svg') no-repeat 50% 50%;
 
       @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
         &::after {
@@ -120,6 +120,10 @@ li {
           border-radius: 12px;
         }
       }
+    }
+
+    &__link-burger {
+      background: #ff3e79 url('../img/burger.svg') no-repeat 50% 50%;
     }
 
     &__item--shift-left {
@@ -193,18 +197,19 @@ li {
   .main {
     display: flex;
     flex-direction: column;
-    padding: 0 16px 220px 16px;
+    // padding: 0 16px 55px 16px;
+    padding-bottom: 55px;
     height: 100%;
     gap: 24px;
 
     @media (min-width: $screen-md) and (max-width: $screen-lg) {
       gap: 32px;
-      padding: 0 24px 120px 24px;
+      padding: 0 24px 80px 24px;
     }
 
     @media (min-width: $screen-lg) {
       gap: 19px;
-      padding: 0 32px 120px 32px;
+      padding: 0 32px 85px 32px;
     }
 
     @media (min-width: $screen-mega-lg) {
@@ -223,10 +228,16 @@ li {
         font-size: 28px;
         line-height: 40px;
         margin-bottom: 0;
+        padding: 0 16px;
+
+        @media (min-width: $screen-md) {
+          padding: 0;
+        }
 
         @media (min-width: $screen-lg) {
           display: flex;
           justify-content: space-between;
+          padding: 0;
         }
 
         &::before {
@@ -287,6 +298,32 @@ li {
         @media (min-width: $screen-lg) {
           flex-wrap: wrap;
           overflow-x: visible;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 24px;
+          height: 40px;
+          background: linear-gradient(
+            90deg,
+            #f8f8f8 16.84%,
+            rgba(248, 248, 248, 0) 100%
+          );
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 24px;
+          height: 40px;
+          background: linear-gradient(
+            270deg,
+            #f8f8f8 16.84%,
+            rgba(248, 248, 248, 0) 100%
+          );
         }
 
         &::-webkit-scrollbar {
@@ -358,12 +395,15 @@ li {
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
+      padding: 0 16px;
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
+        padding: 0;
         line-height: 20px;
       }
 
       @media (min-width: $screen-lg) {
+        padding: 0;
         line-height: 20px;
       }
 
@@ -407,9 +447,14 @@ li {
     &__button {
       display: flex;
       align-items: center;
-      align-self: flex-start;      
+      align-self: flex-start;
       letter-spacing: -0.2px;
       @include fontMedium;
+      padding: 0 16px;
+
+      @media (min-width: $screen-md) {
+        padding: 0;
+      }
 
       @media (min-width: $screen-lg) {
         line-height: 24px;
@@ -508,13 +553,11 @@ li {
   @media (min-width: $screen-md) and (max-width: 1015px) {
     display: block;
     margin-top: 24px;
-
   }
 
   @media (min-width: 1015px) and (max-width: $screen-lg) {
     display: block;
     margin-top: 24px;
-
   }
 
   @media (min-width: $screen-lg) {
@@ -547,8 +590,8 @@ li {
   opacity: 0.8;
 }
 
-.swiper-slide:not(:hover) {
-  transition: 0.2s;
+.prices .swiper-slide:hover {
+  box-shadow: none;
 }
 
 @include iconOpacity;

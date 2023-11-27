@@ -27,30 +27,45 @@
 
     &__title {
       background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
-      padding: 16px 0;
+      padding: 16px;
       margin-bottom: 16px;
       text-transform: uppercase;
       color: $text-color--gray;
+      border-top: 1px solid $color-line--blue;
 
       @media (min-width: $screen-md) and (max-width: 1015px) {
         height: 56px;
-        padding-bottom: 16px;
-        margin-bottom: 24px;
+        padding-left: 24px;
+        margin: 0 -24px 24px;
       }
 
       @media (min-width: 1015px) and (max-width: $screen-lg) {
         height: 56px;
-        padding-bottom: 16px;
-        margin-bottom: 24px;
+        padding-left: 32px;
+        margin: 0 -32px 24px;
       }
 
       @media (min-width: $screen-lg) {
-        width: 1090px;
         height: 56px;
-        padding-bottom: 16px;
-        margin-bottom: 24px;
+        padding-left: 32px;
+        margin: 0 -32px 24px;
       }
-    }    
+    }
+
+    .swiper-container-small {
+      display: flex;
+      align-items: flex-start;
+
+      &::before {
+        @include gradientBefore;
+        height: 70px;        
+      }
+    
+      &::after {
+        @include gradientAfter;
+        height: 70px;
+      }
+    }
   }
 
   .swiper {
@@ -119,13 +134,13 @@
 
       @media (min-width: 1015px) and (max-width: $screen-lg) {
         overflow-y: visible;
-        height: 245px;
+        height: 250px;
         transition: height 0.3s;
       }
 
       @media (min-width: $screen-lg) {
         overflow-y: visible;
-        height: 245px;
+        height: 250px;
         transition: height 0.3s;
       }
     }

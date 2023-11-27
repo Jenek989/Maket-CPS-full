@@ -1,25 +1,21 @@
 @mixin fontRegular {
-  font-family: 'TT Lakes';
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
 }
 
 @mixin fontMedium {
-  font-family: 'TT Lakes';
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
 @mixin fontBold {
-  font-family: 'TT Lakes';
   font-weight: 600;
   line-height: 28px;
 }
 
 @mixin fontMediumFooter {
-  font-family: 'TT Lakes';
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -27,7 +23,6 @@
 }
 
 @mixin fontBoldPriceButton {
-  font-family: 'TT Lakes';
   font-size: 12px;
   line-height: 24px;
   text-align: right;
@@ -110,4 +105,30 @@
   .opacity:not(:hover) {
     transition: 0.2s;
   }
+}
+
+@mixin gradientBefore {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  background: linear-gradient(
+    90deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  z-index: 100;
+}
+
+@mixin gradientAfter {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 24px;
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  z-index: 100;
 }
