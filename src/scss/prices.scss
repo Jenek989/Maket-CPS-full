@@ -76,6 +76,25 @@ h2 {
 
   &__swiper {
     overflow: hidden;
+
+    &::before {
+      @include gradientBefore;
+      height: 200px;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  
+    &::after {
+      @include gradientAfter;
+      margin-top: -225px;
+      height: 200px;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
   }
 
   .swiper-wrapper {

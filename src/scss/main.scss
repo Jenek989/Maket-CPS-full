@@ -480,13 +480,13 @@ body {
     }
 
     &__image {
-      margin: 0 -16px;
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         flex-grow: 1;
         width: 360px;
         height: auto;
         border-radius: 6px;
+        margin: 0 -16px;
       }
 
       @media (min-width: $screen-lg) {
@@ -500,7 +500,7 @@ body {
   .swiper-pagination {
     position: relative;
     z-index: 80;
-    margin-bottom: 5px;
+    margin-bottom: -12px;
 
     @media (min-width: $screen-md) and (max-width: 1015px) {
       display: none;
@@ -529,10 +529,12 @@ body {
   }
 
   .devises__swiper .swiper-pagination {
+    margin-bottom: 5px;
     top: 10px;
   }
 
   .prices__swiper .swiper-pagination {
+    margin-bottom: 5px;
     top: 10px;
   }
 }

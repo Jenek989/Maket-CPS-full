@@ -31,6 +31,25 @@
 
   &__swiper {
     overflow: hidden;
+
+    &::before {
+      @include gradientBefore;
+      height: 158px;   
+      
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  
+    &::after {
+      @include gradientAfter;
+      margin-top: -190px;
+      height: 158px;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
   }
 
   .swiper-wrapper {
