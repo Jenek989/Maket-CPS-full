@@ -1445,11 +1445,11 @@ body {
     @media (min-width: 768px) and (max-width: 1120px) {
       .devises .section_title {
         padding-left: 24px;
-        margin: 0 -24px 24px; } }
+        margin: 0 -24px; } }
     @media (min-width: 1120px) {
       .devises .section_title {
         padding-left: 32px;
-        margin: 0 -32px 24px; } }
+        margin: 0 -32px; } }
   .devises__text {
     align-self: flex-start; }
   .devises__swiper {
@@ -1583,11 +1583,11 @@ h2 {
     @media (min-width: 768px) and (max-width: 1120px) {
       .prices .section_title {
         padding-left: 24px;
-        margin: 0 -24px 24px; } }
+        margin: 0 -24px; } }
     @media (min-width: 1120px) {
       .prices .section_title {
         padding-left: 32px;
-        margin: 0 -32px 24px; } }
+        margin: 0 -32px; } }
   .prices__swiper {
     overflow: hidden; }
     .prices__swiper::after {
