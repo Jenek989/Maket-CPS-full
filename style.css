@@ -890,6 +890,9 @@ body {
       overflow-x: scroll;
       white-space: pre;
       margin-left: 16px; }
+      @media (min-width: 768px) {
+        .body-wrapper .main .navigation__list {
+          margin-left: 0; } }
       @media (min-width: 1120px) {
         .body-wrapper .main .navigation__list {
           flex-wrap: wrap;
