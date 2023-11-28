@@ -9,7 +9,7 @@
   height: 100%;
   visibility: hidden;
   transition:
-    right 0.2s,
+    right 0.3s,
     visibility 50ms;
   background: rgba(255, 255, 255, 0.9);
 
@@ -101,7 +101,7 @@
       @include buttonOreder;
       &:hover {
         opacity: 0.8;
-        transition: opacity 0.2s;
+        transition: opacity 0.1s;
       }
     }
   }
