@@ -723,6 +723,7 @@ body {
   background-color: #f8f8f8;
   margin: 0 auto;
   padding-right: 0;
+  transition: transform 0.3s;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px; }
