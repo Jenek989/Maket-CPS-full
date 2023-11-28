@@ -1470,7 +1470,7 @@ body {
   .devises .swiper-wrapper {
     height: auto;
     max-height: 160px;
-    transition: max-height 0.3s; }
+    transition: max-height 0.3s, transform 0.3s; }
     @media (min-width: 768px) {
       .devises .swiper-wrapper {
         flex-wrap: wrap;
