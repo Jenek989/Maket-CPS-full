@@ -1810,7 +1810,8 @@ h2 {
       .popup-call__body {
         margin: 0 auto;
         padding: 24px 16px;
-        width: 320px; } }
+        width: 100%;
+        min-width: 320px; } }
   .popup-call--visible {
     visibility: visible;
     right: 0; }
@@ -1921,7 +1922,8 @@ h2 {
       .popup-feedback__body {
         margin: 0 auto;
         padding: 24px 16px;
-        width: 320px; } }
+        width: 100%;
+        min-width: 320px; } }
   .popup-feedback--visible {
     visibility: visible;
     right: 0; }
