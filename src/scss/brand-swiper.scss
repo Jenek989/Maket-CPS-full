@@ -125,13 +125,13 @@
     }
 
     &.hidden {
-      @media (min-width: $screen-md) and (max-width: 1015px) {
+      @media (min-width: $screen-md) and (max-width: 1033px) {
         overflow-y: visible;
         transition: height 0.3s;
         height: 335px;
       }
 
-      @media (min-width: 1015px) and (max-width: $screen-lg) {
+      @media (min-width: 1033px) and (max-width: $screen-lg) {
         overflow-y: visible;
         height: 250px;
         transition: height 0.3s;
