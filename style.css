@@ -757,7 +757,7 @@ body {
         padding: 24px; } }
     @media (min-width: 1120px) and (max-width: 1440px) {
       .body-wrapper .upper-menu {
-        padding: 24px; } }
+        padding: 32px; } }
     .body-wrapper .upper-menu__item-burger {
       display: flex; }
       @media (min-width: 768px) and (max-width: 1440px) {
