@@ -303,6 +303,7 @@ body {
         @media (min-width: $screen-lg) {
           flex-wrap: wrap;
           overflow-x: visible;
+          margin: 0;
         }
 
         &::after {
