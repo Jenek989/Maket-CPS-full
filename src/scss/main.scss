@@ -413,10 +413,7 @@ body {
 
         &.openText {
           overflow: visible;
-
-          @media (min-width: $screen-sm) {
-            max-height: 200px;
-          }
+          max-height: 200px;
 
           @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
             max-height: 200px;
