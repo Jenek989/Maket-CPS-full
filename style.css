@@ -1535,9 +1535,6 @@ body {
   @media (min-width: 1017px) {
     .devises .hidden {
       height: 160px; } }
-  @media (min-width: 1440px) {
-    .devises .hidden {
-      height: 160px; } }
 
 h2 {
   font-weight: inherit;
