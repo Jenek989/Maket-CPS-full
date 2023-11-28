@@ -691,9 +691,6 @@ li {
 .lock {
   overflow: hidden;
   margin-right: 17px; }
-  @media (-webkit-min-device-pixel-ratio: 2.0833333333333335), (min-resolution: 200dpi) {
-    .lock {
-      margin-right: 0; } }
 
 .visualitty-hidden {
   display: none; }
@@ -1229,12 +1226,12 @@ body {
       margin: 0;
       overflow-y: hidden;
       transition: height 0.3s; } }
-  @media (min-width: 768px) and (max-width: 1015px) {
+  @media (min-width: 768px) and (max-width: 1033px) {
     .main-section .swiper-wrapper.hidden {
       overflow-y: visible;
       transition: height 0.3s;
       height: 335px; } }
-  @media (min-width: 1015px) and (max-width: 1120px) {
+  @media (min-width: 1033px) and (max-width: 1120px) {
     .main-section .swiper-wrapper.hidden {
       overflow-y: visible;
       height: 250px;
