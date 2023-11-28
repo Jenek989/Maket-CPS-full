@@ -1325,7 +1325,8 @@ body {
     background: #ffffff;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     transform: translateX(-1000px);
-    transition: 0.2s;
+    transition: transform 0.3s, opacity 0.1s;
+    opacity: 0;
     z-index: 100; }
     @media (min-width: 1440px) {
       .sidebar-wrapper .sidebar {
@@ -1333,7 +1334,9 @@ body {
         transform: translateX(0);
         box-shadow: none; } }
     .sidebar-wrapper .sidebar.sidebar--open {
-      transform: translateX(0); }
+      transform: translateX(0);
+      opacity: 1;
+      transition: transform 0.3s, opacity 0.1s; }
       @media (min-width: 320px) and (max-width: 360px) {
         .sidebar-wrapper .sidebar.sidebar--open {
           width: 100%; } }
@@ -1388,11 +1391,11 @@ body {
         left: 0px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        transition: 0.3s;
+        transition: 0.2s;
         opacity: 0; }
       .sidebar-wrapper .sidebar .sidebar-navigation__item:hover::before {
         opacity: 1;
-        transition: 0.3s; }
+        transition: 0.2s; }
     .sidebar-wrapper .sidebar .sidebar-footer {
       display: flex;
       flex-direction: column;
@@ -1794,7 +1797,7 @@ h2 {
   width: 8000px;
   height: 100%;
   visibility: hidden;
-  transition: right 0.2s, visibility 50ms;
+  transition: right 0.3s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
   @media (max-width: 768px) {
     .popup-call {
@@ -1887,7 +1890,7 @@ h2 {
         background-image: url(./static/arrow_right_white.svg); }
       .popup-call__input--submit:hover {
         opacity: 0.8;
-        transition: opacity 0.2s; }
+        transition: opacity 0.1s; }
   .popup-call__info {
     margin-bottom: 20px;
     color: #7e7e82; }
@@ -1906,7 +1909,7 @@ h2 {
   width: 8000px;
   height: 100%;
   visibility: hidden;
-  transition: right 0.2s, visibility 50ms;
+  transition: right 0.3s, visibility 50ms;
   background: rgba(255, 255, 255, 0.9); }
   @media (max-width: 768px) {
     .popup-feedback {
@@ -2003,7 +2006,7 @@ h2 {
         background-image: url(./static/arrow_right_white.svg); }
       .popup-feedback__input--submit:hover {
         opacity: 0.8;
-        transition: opacity 0.2s; }
+        transition: opacity 0.1s; }
   .popup-feedback__info {
     margin-bottom: 20px;
     color: #7e7e82; }
