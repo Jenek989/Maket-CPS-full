@@ -44,8 +44,9 @@
   }
 
   .swiper-wrapper {
-    height: 160px;
-    transition: 0.3s;
+    height: auto;
+    max-height: 160px;
+    transition: max-height 0.3s;
 
     @media (min-width: $screen-md) {
       flex-wrap: wrap;
@@ -85,10 +86,7 @@
 
   .hidden {
     @media (min-width: $screen-md) {
-      height: 344px;
-    }
-    @media (min-width: 1017px) {
-      height: 160px;
+      max-height: 400px;
     }
   }
 }

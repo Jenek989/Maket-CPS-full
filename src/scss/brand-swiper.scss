@@ -90,57 +90,21 @@
   .swiper-wrapper {
     display: flex;
 
-    @media (min-width: $screen-md) and (max-width: 1015px) {
+    @media (min-width: $screen-md) {
       flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 16px;
-      height: 160px;
-      width: inherit;
+      height: auto;
+      max-height: 160px;
       margin: 0;
       overflow-y: hidden;
-      transition: height 0.3s;
-    }
-
-    @media (min-width: 1015px) and (max-width: $screen-lg) {
-      flex-wrap: wrap;
-      column-gap: 24px;
-      row-gap: 16px;
-      height: 160px;
-      width: inherit;
-      margin: 0;
-      overflow-y: hidden;
-      transition: height 0.3s;
-    }
-
-    @media (min-width: $screen-lg) {
-      flex-wrap: wrap;
-      column-gap: 32px;
-      row-gap: 16px;
-      justify-content: flex-start;
-      height: 160px;
-      width: inherit;
-      margin: 0;
-      overflow-y: hidden;
-      transition: height 0.3s;
+      transition: max-height 0.3s;
     }
 
     &.hidden {
-      @media (min-width: $screen-md) and (max-width: 1033px) {
+      @media (min-width: $screen-md) {
         overflow-y: visible;
-        transition: height 0.3s;
-        height: 335px;
-      }
-
-      @media (min-width: 1033px) and (max-width: $screen-lg) {
-        overflow-y: visible;
-        height: 250px;
-        transition: height 0.3s;
-      }
-
-      @media (min-width: $screen-lg) {
-        overflow-y: visible;
-        height: 250px;
-        transition: height 0.3s;
+        max-height: 400px;
       }
     }
 
