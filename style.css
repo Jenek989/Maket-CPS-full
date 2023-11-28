@@ -980,10 +980,8 @@ body {
           margin-top: 4px;
           transition: 0.3s; } }
       .body-wrapper .about__text--hidden.openText {
-        overflow: visible; }
-        @media (min-width: 320px) {
-          .body-wrapper .about__text--hidden.openText {
-            max-height: 200px; } }
+        overflow: visible;
+        max-height: 200px; }
         @media (min-width: 768px) and (max-width: 1440px) {
           .body-wrapper .about__text--hidden.openText {
             max-height: 200px; } }
