@@ -691,6 +691,9 @@ li {
 .lock {
   overflow: hidden;
   margin-right: 17px; }
+  @media (-webkit-min-device-pixel-ratio: 2.0833333333333335), (min-resolution: 200dpi) {
+    .lock {
+      margin-right: 0; } }
 
 .visualitty-hidden {
   display: none; }
@@ -1325,8 +1328,7 @@ body {
     background: #ffffff;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     transform: translateX(-1000px);
-    transition: transform 0.3s, opacity 0.1s;
-    opacity: 0;
+    transition: 0.3s;
     z-index: 100; }
     @media (min-width: 1440px) {
       .sidebar-wrapper .sidebar {
@@ -1334,9 +1336,7 @@ body {
         transform: translateX(0);
         box-shadow: none; } }
     .sidebar-wrapper .sidebar.sidebar--open {
-      transform: translateX(0);
-      opacity: 1;
-      transition: transform 0.3s, opacity 0.1s; }
+      transform: translateX(0); }
       @media (min-width: 320px) and (max-width: 360px) {
         .sidebar-wrapper .sidebar.sidebar--open {
           width: 100%; } }
@@ -1391,11 +1391,11 @@ body {
         left: 0px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        transition: 0.2s;
+        transition: 0.3s;
         opacity: 0; }
       .sidebar-wrapper .sidebar .sidebar-navigation__item:hover::before {
         opacity: 1;
-        transition: 0.2s; }
+        transition: 0.3s; }
     .sidebar-wrapper .sidebar .sidebar-footer {
       display: flex;
       flex-direction: column;
@@ -1811,7 +1811,6 @@ h2 {
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
     @media (max-width: 767px) {
       .popup-call__body {
-        margin: 0 auto;
         padding: 24px 16px;
         width: 100%;
         min-width: 320px; } }
@@ -1923,7 +1922,6 @@ h2 {
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
     @media (max-width: 767px) {
       .popup-feedback__body {
-        margin: 0 auto;
         padding: 24px 16px;
         width: 100%;
         min-width: 320px; } }
