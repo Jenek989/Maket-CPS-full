@@ -24,8 +24,7 @@
       16px 0px 52px 0px rgba(14, 24, 80, 0.2),
       -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     transform: translateX(-1000px);
-    transition: transform 0.3s, opacity 0.1s;
-    opacity: 0;
+    transition: 0.3s;
     z-index: 100;
 
     @media (min-width: $screen-mega-lg) {
@@ -36,8 +35,6 @@
 
     &.sidebar--open {
       transform: translateX(0);
-      opacity: 1;
-      transition: transform 0.3s, opacity 0.1s;
 
       @media (min-width: $screen-sm) and (max-width: 360px) {
         width: 100%;
@@ -114,13 +111,13 @@
           left: 0px;
           border-top-right-radius: 20px;
           border-bottom-right-radius: 20px;
-          transition: 0.2s;
+          transition: 0.3s;
           opacity: 0;
         }
 
         &:hover::before {
           opacity: 1;
-          transition: 0.2s;
+          transition: 0.3s;
         }
       }
     }

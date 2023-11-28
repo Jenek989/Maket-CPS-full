@@ -23,6 +23,10 @@ li {
 .lock {
   overflow: hidden;
   margin-right: 17px;
+
+  @media (min-resolution: 200dpi) {
+    margin-right: 0;
+  }
 }
 
 .visualitty-hidden {
