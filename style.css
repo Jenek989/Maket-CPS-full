@@ -710,7 +710,7 @@ body {
 .body-wrapper {
   color: #1b1c21;
   margin: 0 auto;
-  transition: 0.2s; }
+  transition: width0 0.2s; }
   @media (min-width: 1120px) {
     .body-wrapper {
       width: 1120px; } }
@@ -753,8 +753,7 @@ body {
   padding: 14px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #D9FFF5;
-  transition: 0.2s; }
+  border-bottom: 1px solid #D9FFF5; }
   @media (min-width: 768px) and (max-width: 1120px) {
     .upper-menu {
       padding: 24px; } }
@@ -971,7 +970,7 @@ body {
   height: auto;
   max-height: 90px;
   overflow: hidden;
-  transition: 0.3s;
+  transition: max-height 0.3s;
   line-height: 18px;
   letter-spacing: 0.2px; }
   @media (min-width: 768px) {
@@ -987,8 +986,7 @@ body {
   .about__text-container.openText {
     overflow: visible;
     height: auto;
-    max-height: 300px;
-    transition: 0.3s; }
+    max-height: 300px; }
 
 .about__text {
   font-size: 14px;
@@ -1125,9 +1123,12 @@ body {
     .mySwiper {
       margin-left: 0; } }
 
+.swiper-slide {
+  transition: box-shadow 0.2s, opacity 0.2s; }
+
 .swiper-slide:hover {
   box-shadow: inset 0 0 1px 0.5px #ff3e79;
-  transition: 0.2s;
+  transition: box-shadow 0.2s, opacity 0.2s;
   opacity: 0.8; }
 
 .prices .swiper-slide:hover {
@@ -1137,8 +1138,7 @@ body {
   transition: opacity 0.2s; }
 
 .opacity:hover {
-  opacity: 0.7;
-  transition: opacity 0.2s; }
+  opacity: 0.7; }
 
 @media (min-width: 768px) and (max-width: 1015px) {
   .main-section {
@@ -1221,55 +1221,21 @@ body {
 
 .main-section .swiper-wrapper {
   display: flex; }
-  @media (min-width: 768px) and (max-width: 1015px) {
+  @media (min-width: 768px) {
     .main-section .swiper-wrapper {
       flex-wrap: wrap;
       -moz-column-gap: 24px;
            column-gap: 24px;
       row-gap: 16px;
-      height: 160px;
-      width: inherit;
+      height: auto;
+      max-height: 160px;
       margin: 0;
       overflow-y: hidden;
-      transition: height 0.3s; } }
-  @media (min-width: 1015px) and (max-width: 1120px) {
-    .main-section .swiper-wrapper {
-      flex-wrap: wrap;
-      -moz-column-gap: 24px;
-           column-gap: 24px;
-      row-gap: 16px;
-      height: 160px;
-      width: inherit;
-      margin: 0;
-      overflow-y: hidden;
-      transition: height 0.3s; } }
-  @media (min-width: 1120px) {
-    .main-section .swiper-wrapper {
-      flex-wrap: wrap;
-      -moz-column-gap: 32px;
-           column-gap: 32px;
-      row-gap: 16px;
-      justify-content: flex-start;
-      height: 160px;
-      width: inherit;
-      margin: 0;
-      overflow-y: hidden;
-      transition: height 0.3s; } }
-  @media (min-width: 768px) and (max-width: 1033px) {
+      transition: max-height 0.3s; } }
+  @media (min-width: 768px) {
     .main-section .swiper-wrapper.hidden {
       overflow-y: visible;
-      transition: height 0.3s;
-      height: 335px; } }
-  @media (min-width: 1033px) and (max-width: 1120px) {
-    .main-section .swiper-wrapper.hidden {
-      overflow-y: visible;
-      height: 250px;
-      transition: height 0.3s; } }
-  @media (min-width: 1120px) {
-    .main-section .swiper-wrapper.hidden {
-      overflow-y: visible;
-      height: 250px;
-      transition: height 0.3s; } }
+      max-height: 400px; } }
   @media (min-width: 768px) and (max-width: 1015px) {
     .main-section .swiper-wrapper::after {
       content: '';
@@ -1355,7 +1321,7 @@ body {
   background: #ffffff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   transform: translateX(-1000px);
-  transition: 0.3s;
+  transition: transform 0.3s;
   z-index: 100; }
   @media (min-width: 1440px) {
     .sidebar {
@@ -1386,23 +1352,21 @@ body {
   .sidebar-upper-menu .opacity {
     transition: opacity 0.2s; }
   .sidebar-upper-menu .opacity:hover {
-    opacity: 0.7;
-    transition: opacity 0.2s; }
+    opacity: 0.7; }
   .sidebar-upper-menu__link-cancel {
     background: #ff3e79 url(./static/cancel.svg) no-repeat 50% 50%; }
     @media (min-width: 1440px) {
       .sidebar-upper-menu__link-cancel {
         visibility: hidden;
         transform: translateX(-1000px);
-        transition: 0.2s; } }
+        transition: transform 0.3s; } }
   .sidebar-upper-menu__link-search {
     background: #ff3e79 url(./static/loupe.svg) no-repeat 50% 50%; }
   .sidebar-upper-menu__logo {
     flex-grow: 1; }
     @media (min-width: 1440px) {
       .sidebar-upper-menu__logo {
-        transform: translateX(-55px);
-        transition: 0.2s; } }
+        transform: translateX(-55px); } }
 
 .sidebar-navigation__list {
   display: flex;
@@ -1423,11 +1387,10 @@ body {
     left: 0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: 0.3s;
+    transition: opacity 0.3s;
     opacity: 0; }
   .sidebar-navigation__item:hover::before {
-    opacity: 1;
-    transition: 0.3s; }
+    opacity: 1; }
 
 .sidebar-footer {
   display: flex;
@@ -1504,8 +1467,9 @@ body {
         .devises__swiper::after {
           display: none; } }
   .devises .swiper-wrapper {
-    height: 160px;
-    transition: 0.3s; }
+    height: auto;
+    max-height: 160px;
+    transition: max-height 0.3s; }
     @media (min-width: 768px) {
       .devises .swiper-wrapper {
         flex-wrap: wrap;
@@ -1565,10 +1529,7 @@ body {
       transform: rotate(45deg); }
   @media (min-width: 768px) {
     .devises .hidden {
-      height: 344px; } }
-  @media (min-width: 1017px) {
-    .devises .hidden {
-      height: 160px; } }
+      max-height: 400px; } }
 
 h2 {
   font-weight: inherit;
