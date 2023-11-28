@@ -97,13 +97,14 @@
 }
 
 @mixin iconOpacity {
-  .opacity:hover {
-    opacity: 0.7;
-    transition: 0.2s;
+
+  .opacity {
+    transition: opacity 0.2s;
   }
 
-  .opacity:not(:hover) {
-    transition: 0.2s;
+  .opacity:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s;
   }
 }
 

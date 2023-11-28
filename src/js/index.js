@@ -5,7 +5,7 @@ import '../scss/style.scss';
 
 // buttons
 const slideList = document.querySelectorAll('.swiper-wrapper');
-const slideText = document.querySelector('.about__text--hidden');
+const slideText = document.querySelector('.about__text-container--hidden');
 const buttonsMore = document.querySelectorAll('.button');
 const buttonText = document.querySelector('.about__button');
 

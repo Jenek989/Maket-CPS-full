@@ -19,20 +19,19 @@
     letter-spacing: -0.2px;
     color: #1b1c21;    
   }
+}
 
-  .button-offer {
-    position: relative;
-    margin-top: 10px;
+.button-offer {
+  position: relative;
+}
 
-    &::after {
-      content: '';
-      position: absolute;
-      margin-top: 7px;
-      margin-left: 5px;
-      width: 13px;
-      height: 13px;
-      background: url('../img/arrow_right.svg') no-repeat 100% 100%;
-      background-size: contain;
-    }
-  }
+.button-offer::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: -20px;
+  width: 13px;
+  height: 13px;
+  background: url('../img/arrow_right.svg') no-repeat 100% 100%;
+  background-size: contain;
 }
