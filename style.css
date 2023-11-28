@@ -896,7 +896,8 @@ body {
       @media (min-width: 1120px) {
         .body-wrapper .main .navigation__list {
           flex-wrap: wrap;
-          overflow-x: visible; } }
+          overflow-x: visible;
+          margin: 0; } }
       .body-wrapper .main .navigation__list::after {
         content: '';
         position: absolute;
