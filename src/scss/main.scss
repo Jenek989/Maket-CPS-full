@@ -353,7 +353,7 @@ body {
 
       @media (min-width: $screen-lg) {
         flex-direction: row;
-        gap: 35px;
+        gap: 36px;
       }
     }
 
@@ -363,7 +363,7 @@ body {
       gap: 8px;
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
-        width: 310px;
+        width: 52%;
         gap: 16px;
       }
 
@@ -391,19 +391,22 @@ body {
 
       &--hidden {
         overflow: hidden;
-        height: 0;
+        height: auto;
+        max-height: 0;
         transition: 0.2s;
 
         @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
           display: block;
-          height: 36px;
+          height: auto;
+          max-height: 36px;
           margin-top: 4px;
           transition: 0.2s;
         }
 
         @media (min-width: $screen-mega-lg) {
           display: block;
-          height: 80px;
+          height: auto;
+          max-height: 200px;
           margin-top: 4px;
           transition: 0.2s;
         }
@@ -412,15 +415,11 @@ body {
           overflow: visible;
 
           @media (min-width: $screen-sm) {
-            height: auto;
+            max-height: 200px;
           }
 
-          @media (min-width: $screen-md) and (max-width: $screen-lg) {
-            height: 120px;
-          }
-
-          @media (min-width: $screen-lg) and (max-width: $screen-mega-lg) {
-            height: 80px;
+          @media (min-width: $screen-md) and (max-width: $screen-mega-lg) {
+            max-height: 200px;
           }
         }
       }
@@ -440,6 +439,12 @@ body {
 
       @media (min-width: $screen-lg) {
         line-height: 24px;
+      }
+
+      &.buttonText--open {
+        @media (max-width: $screen-md) {
+          padding-top: 8px;
+        }
       }
 
       &::before {
@@ -465,7 +470,7 @@ body {
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         flex-grow: 1;
         align-self: flex-start;
-        width: 360px;
+        width: 48%;
         height: auto;
         border-radius: 6px;
       }
