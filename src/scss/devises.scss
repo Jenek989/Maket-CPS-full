@@ -84,7 +84,12 @@
   }
 
   .hidden {
-    height: 344px;
+    @media (min-width: $screen-md) {
+      height: 344px;
+    }
+    @media (min-width: 1017px) {
+      height: 160px;
+    }
     @media (min-width: $screen-mega-lg) {
       height: 160px;
     }
