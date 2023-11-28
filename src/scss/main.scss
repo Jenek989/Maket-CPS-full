@@ -465,6 +465,7 @@ body {
     &__image {
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         flex-grow: 1;
+        align-self: flex-start;
         width: 360px;
         height: auto;
         border-radius: 6px;
