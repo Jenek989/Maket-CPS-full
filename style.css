@@ -1018,6 +1018,7 @@ body {
   @media (min-width: 768px) and (max-width: 1120px) {
     .body-wrapper .about__image {
       flex-grow: 1;
+      align-self: flex-start;
       width: 360px;
       height: auto;
       border-radius: 6px;
