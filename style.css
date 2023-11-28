@@ -1529,11 +1529,15 @@ body {
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
       transform: rotate(45deg); }
-  .devises .hidden {
-    height: 344px; }
-    @media (min-width: 1440px) {
-      .devises .hidden {
-        height: 160px; } }
+  @media (min-width: 768px) {
+    .devises .hidden {
+      height: 344px; } }
+  @media (min-width: 1017px) {
+    .devises .hidden {
+      height: 160px; } }
+  @media (min-width: 1440px) {
+    .devises .hidden {
+      height: 160px; } }
 
 h2 {
   font-weight: inherit;
