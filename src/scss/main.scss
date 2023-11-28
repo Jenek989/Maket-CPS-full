@@ -290,9 +290,20 @@ body {
     }
 
     .navigation {
+      overflow-x: scroll;
+
+      @media (min-width: $screen-md) and (max-width: $screen-lg) {
+        padding-left: 24px;
+        margin: 0 -24px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
       &__list {
         display: flex;
-        overflow-x: scroll;
         white-space: pre;
         margin-left: 16px;
 
@@ -308,11 +319,6 @@ body {
 
         &::after {
           @include gradientAfter height: 40px;
-        }
-
-        &::-webkit-scrollbar {
-          width: 0;
-          height: 0;
         }
       }
 
