@@ -17,7 +17,7 @@
   &__link {
     @include fontBold;
     letter-spacing: -0.2px;
-    color: #1b1c21;    
+    color: #1b1c21;
   }
 }
 
@@ -28,10 +28,14 @@
 .button-offer::after {
   content: '';
   position: absolute;
-  top: 4px;
+  bottom: 5px;
   right: -20px;
   width: 13px;
   height: 13px;
   background: url('../img/arrow_right.svg') no-repeat 100% 100%;
   background-size: contain;
+
+  @media (min-width: 341px) {
+    top: 4px;
+  }  
 }
