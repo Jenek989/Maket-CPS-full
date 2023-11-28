@@ -348,13 +348,12 @@ body {
 
       @media (min-width: $screen-md) and (max-width: $screen-lg) {
         flex-direction: row;
-        gap: 64px;
-        padding-right: 15px;
+        gap: 48px;
       }
 
       @media (min-width: $screen-lg) {
         flex-direction: row;
-        gap: 50px;
+        gap: 35px;
       }
     }
 
@@ -469,7 +468,6 @@ body {
         width: 360px;
         height: auto;
         border-radius: 6px;
-        margin: 0 -16px;
       }
 
       @media (min-width: $screen-lg) {
