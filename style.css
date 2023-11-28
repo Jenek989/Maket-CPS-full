@@ -1732,12 +1732,15 @@ h2 {
 .button-offer::after {
   content: '';
   position: absolute;
-  top: 4px;
+  bottom: 5px;
   right: -20px;
   width: 13px;
   height: 13px;
   background: url(./static/arrow_right.svg) no-repeat 100% 100%;
   background-size: contain; }
+  @media (min-width: 341px) {
+    .button-offer::after {
+      top: 4px; } }
 
 .footer {
   margin-top: auto;
