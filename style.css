@@ -964,21 +964,21 @@ body {
       overflow: hidden;
       height: auto;
       max-height: 0;
-      transition: 0.2s; }
+      transition: 0.3s; }
       @media (min-width: 768px) and (max-width: 1440px) {
         .body-wrapper .about__text--hidden {
           display: block;
           height: auto;
           max-height: 36px;
           margin-top: 4px;
-          transition: 0.2s; } }
+          transition: 0.3s; } }
       @media (min-width: 1440px) {
         .body-wrapper .about__text--hidden {
           display: block;
           height: auto;
           max-height: 200px;
           margin-top: 4px;
-          transition: 0.2s; } }
+          transition: 0.3s; } }
       .body-wrapper .about__text--hidden.openText {
         overflow: visible; }
         @media (min-width: 320px) {
