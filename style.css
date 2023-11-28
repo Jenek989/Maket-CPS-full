@@ -934,14 +934,14 @@ body {
     @media (min-width: 1120px) {
       .body-wrapper .about__content {
         flex-direction: row;
-        gap: 35px; } }
+        gap: 36px; } }
   .body-wrapper .about__full-text {
     display: flex;
     flex-direction: column;
     gap: 8px; }
     @media (min-width: 768px) and (max-width: 1120px) {
       .body-wrapper .about__full-text {
-        width: 310px;
+        width: 52%;
         gap: 16px; } }
     @media (min-width: 1120px) {
       .body-wrapper .about__full-text {
@@ -962,31 +962,31 @@ body {
         line-height: 20px; } }
     .body-wrapper .about__text--hidden {
       overflow: hidden;
-      height: 0;
+      height: auto;
+      max-height: 0;
       transition: 0.2s; }
       @media (min-width: 768px) and (max-width: 1440px) {
         .body-wrapper .about__text--hidden {
           display: block;
-          height: 36px;
+          height: auto;
+          max-height: 36px;
           margin-top: 4px;
           transition: 0.2s; } }
       @media (min-width: 1440px) {
         .body-wrapper .about__text--hidden {
           display: block;
-          height: 80px;
+          height: auto;
+          max-height: 200px;
           margin-top: 4px;
           transition: 0.2s; } }
       .body-wrapper .about__text--hidden.openText {
         overflow: visible; }
         @media (min-width: 320px) {
           .body-wrapper .about__text--hidden.openText {
-            height: auto; } }
-        @media (min-width: 768px) and (max-width: 1120px) {
+            max-height: 200px; } }
+        @media (min-width: 768px) and (max-width: 1440px) {
           .body-wrapper .about__text--hidden.openText {
-            height: 120px; } }
-        @media (min-width: 1120px) and (max-width: 1440px) {
-          .body-wrapper .about__text--hidden.openText {
-            height: 80px; } }
+            max-height: 200px; } }
   .body-wrapper .about__button {
     display: flex;
     align-items: center;
@@ -1002,6 +1002,9 @@ body {
     @media (min-width: 1120px) {
       .body-wrapper .about__button {
         line-height: 24px; } }
+    @media (max-width: 768px) {
+      .body-wrapper .about__button.buttonText--open {
+        padding-top: 8px; } }
     .body-wrapper .about__button::before {
       content: '';
       position: relative;
@@ -1018,7 +1021,7 @@ body {
     .body-wrapper .about__image {
       flex-grow: 1;
       align-self: flex-start;
-      width: 360px;
+      width: 48%;
       height: auto;
       border-radius: 6px; } }
   @media (min-width: 1120px) {
